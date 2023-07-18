@@ -13,12 +13,165 @@ Acknowledgement: Acknowledge the resources that you use here.
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Online Bookstore</title>
+        <title>My Online Bookstore - Homepage</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <style>
+            #head{
+                display: inline;
+            }
+            .mainBook img{
+                width: 150px;
+                height: 220px;
+                float: left;
+                padding: 20px;
+            }
+            .containerNewLine{ 
+                clear: both; display: block;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav li {
+                float: left;
+            }
+            nav a {
+                display: block;
+                padding: 8px;
+                background-color: #fec7c7;
+            }
+            nav a:hover{
+                background-color: #cdecf5;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>My Online Bookstore</h1>
+        <!--
+            each containing a category name as a link and at least three books displayed as links to the Book Detail page.
+            Links in the header nav bar include Home, Category 1, Category 2, etc.
+            Links in the footer nav bar include About Us, Privacy Policy, Terms, Copyright, and Contact Us (opens Contact page).
+            The content of these pages should be appropriate and up to your creativity.
+            Add rich media: at least one video.
+        -->
+
+        <!-- Main header -->
+
+        <header>
+            <!-- Header with logo image -->
+
+            <img src="assets/bookstore-logo.png" alt="bookstore logo" width="180" height="150">
+            <h1 id="head">My Online Bookstore</h1>
+
+            <!-- vertical nav bar (horizontal on desktop devices) -->
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="list.html">Categories</a>
+                        <!-- Category list containing all categories, clicking on one lists all books in that category -->
+                    </li>
+                    <li>
+                        <a href="book.html">Random Book!</a>
+                        <!-- Leads to a random book details page -->
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <!-- Main header -->
+
+        <!-- Main content -->
+        <main>
+            <!-- Homepage contains at least two main categories -->
+
+            <div class = "mainCategory">
+                <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+                <a href="">
+                    <h2 class="containerNewLine">
+                        Category 1
+                    </h2>
+                </a>
+
+                <div class = "mainBookContainer">
+                    <div class = "mainBook">
+                        <img src="assets/1-lets-find-kirby.jpg" alt="book 1">
+                    </div>
+                    <div class = "mainBook">
+                        <img src="assets/2-the-big-panic.jpg" alt="book 2">
+                    </div>
+                    <div class = "mainBook">
+                        <img src="assets/3-big-race-pupupu.jpg" alt="book 3">
+                    </div>
+                </div>
+                
+                <p class="containerNewLine">
+                    Click on book to see book details.
+                </p>
+
+            </div>
+
+            <hr>
+            <div class = "mainCategory">
+                <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+                 <a href="">
+                    <h2>
+                        Category 2
+                    </h2>
+                </a>
+
+                <div class = "mainBookContainer">
+                    <div class = "mainBook">
+                        <img src="assets/1-lets-find-kirby.jpg" alt="book 3">
+                    </div>
+                    <div class = "mainBook">
+                        <img src="assets/2-the-big-panic.jpg" alt="book 4">
+                    </div>
+                    <div class = "mainBook">
+                        <img src="assets/3-big-race-pupupu.jpg" alt="book 5">
+                    </div>
+                </div>
+                
+                <p class="containerNewLine">
+                    Click on book to see book details.
+                </p>
+
+            </div>
+
+        </main>
+        <!-- Main content -->
+
+        <!-- Footer -->
+            <!-- Footer with horizontal nav bar -->
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="list.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="book.html">Random Book!</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- Footer -->
+
     </body>
 </html>
