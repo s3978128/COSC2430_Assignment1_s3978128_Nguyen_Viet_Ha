@@ -13,12 +13,110 @@ Acknowledgement: Acknowledge the resources that you use here.
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Online Bookstore - Book Details</title>
+        <title>My Online Bookstore - Homepage</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/bookstore-logo.png" type="/png">
         <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <h1>My Online Bookstore - Book Details</h1>
+        <!-- Main header -->
+
+        <header>
+            <!-- Header with logo image -->
+            <div id="title">
+                <img id="header-logo" src="assets/bookstore-logo.png" alt="bookstore logo">
+            </div>
+
+            <!-- vertical nav bar (horizontal on desktop devices) -->
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="list.html">Categories</a>
+                        <!-- Category list containing all categories, clicking on one lists all books in that category -->
+                    </li>
+                    <li>
+                        <a href="book.html">Random Book!</a>
+                        <!-- Leads to a random book details page -->
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <!-- Main header -->
+
+        <!-- Main content -->
+        <main>
+            <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#category">Category</a></li>
+                <li>Book Name</li>
+            </ul>
+        </nav>
+
+        <!-- Book Detail Section -->
+        <section class="book-detail">
+            <!-- Large Image (desktop) -->
+            <img class="large-image" src="path-to-large-book-image.jpg" alt="Book Cover">
+
+            <!-- Small Images (desktop) -->
+            <div class="small-images">
+                <img src="path-to-small-image-1.jpg" alt="Book Image 1">
+                <img src="path-to-small-image-2.jpg" alt="Book Image 2">
+                <img src="path-to-small-image-3.jpg" alt="Book Image 3">
+            </div>
+
+            <!-- Book Price -->
+            <p class="book-price">$19.99</p>
+
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <!-- Book Name and Description -->
+        <section class="book-description">
+            <h2>Book Name</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac turpis sed nisi volutpat lobortis. Mauris
+                auctor turpis ut sapien venenatis rhoncus. Nam feugiat blandit urna, id venenatis odio suscipit vel. Sed
+                tempus nulla a magna rhoncus, a lacinia nisl auctor.
+            </p>
+        </section>
+
+        </main>
+        <!-- Main content -->
+
+        <!-- Footer -->
+            <!-- Footer with horizontal nav bar -->
+
+            <footer>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#copyright">Copyright</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+        <!-- Footer -->
+
     </body>
 </html>
