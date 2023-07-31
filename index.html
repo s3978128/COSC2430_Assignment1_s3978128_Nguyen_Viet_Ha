@@ -29,13 +29,12 @@ Acknowledgement: Acknowledge the resources that you use here.
 
         <header>
             <!-- Header with logo image -->
-            <div id="title">
-                <img id="header-logo" src="assets/bookstore-logo.png" alt="bookstore logo">
-            </div>
+            <img id="header-logo" src="assets/bookstore-logo.png" alt="bookstore logo">
 
             <!-- vertical nav bar (horizontal on desktop devices) -->
-
-            <nav>
+                
+            <div class="mobile-nav-icon">☰</div>
+            <nav class="navbar">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -74,7 +73,7 @@ Acknowledgement: Acknowledge the resources that you use here.
             <div class = "mainCategory">
                 <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
                 <a href="">
-                    <h2 class="containerNewLine">
+                    <h2>
                         Category 1
                     </h2>
                 </a>
@@ -82,73 +81,81 @@ Acknowledgement: Acknowledge the resources that you use here.
                 <!-- Book showcase, book img same size -->
                 <div class = "mainBookContainer">
                     <div class = "mainBook">
-                        <img src="assets/1-kirby-gourmet.jpg" alt="book 1">
-                        <div class="containerNewLine imgButton">
-                            <button>See Details</button>
-                        </div>
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
                     </div>
                     <div class = "mainBook">
-                        <img src="assets/2-the-big-panic.jpg" alt="book 2">
-                        <div class="containerNewLine imgButton">
-                            <button>See Details</button>
-                        </div>
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
                     </div>
                     <div class = "mainBook">
-                        <img src="assets/3-big-race-pupupu.jpg" alt="book 3">
-                        <div class="containerNewLine imgButton">
-                            <button>See Details</button>
-                        </div>
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
                     </div>
                 </div>
                 <!-- Book showcase, book img same size -->
-                
-                <p class="containerNewLine">
-                    Click on book to see book details.
-                </p>
 
             </div>
 
             <div class = "mainCategory">
                 <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
-                 <a href="">
+                <a href="">
                     <h2>
-                        Category 2
+                        Category 1
                     </h2>
                 </a>
-                    
+
                 <!-- Book showcase, book img same size -->
                 <div class = "mainBookContainer">
                     <div class = "mainBook">
-                        <img src="assets/1-kirby-gourmet.jpg" alt="book 1">
-                        <div class="containerNewLine imgButton">
-                            <button>See Details</button>
-                        </div>
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
                     </div>
                     <div class = "mainBook">
-                        <img src="assets/2-the-big-panic.jpg" alt="book 4">
-                        <div class="containerNewLine imgButton">
-                            <button>See Details</button>
-                        </div>
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
                     </div>
                     <div class = "mainBook">
-                        <img src="assets/3-big-race-pupupu.jpg" alt="book 5">
-                        <div class="containerNewLine imgButton">
-                            <button>See Details</button>
-                        </div>
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
                     </div>
                 </div>
                 <!-- Book showcase, book img same size -->
-                
-                <p class="containerNewLine">
-                    Click on book to see book details.
-                </p>
+
+            </div>
+
+            <div class = "mainCategory">
+                <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+                <a href="">
+                    <h2>
+                        Category 1
+                    </h2>
+                </a>
+
+                <!-- Book showcase, book img same size -->
+                <div class = "mainBookContainer">
+                    <div class = "mainBook">
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
+                    </div>
+                    <div class = "mainBook">
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
+                    </div>
+                    <div class = "mainBook">
+                        <img src="assets/no-longer-human.jpg" alt="book 1">
+                        <a class="button">See Details</a>
+                    </div>
+                </div>
+                <!-- Book showcase, book img same size -->
 
             </div>
 
             <!-- Rich Media Section -->
             <section class="rich-media">
-                <h2>Featured Video</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JGJPVl7iQUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div id="yt-video">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/JGJPVl7iQUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </section>
             <!-- Rich Media Section -->
 
@@ -159,7 +166,7 @@ Acknowledgement: Acknowledge the resources that you use here.
             <!-- Footer with horizontal nav bar -->
 
             <footer>
-                <nav class="footer-nav">
+                <nav class="navbar">
                     <ul>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#privacy">Privacy Policy</a></li>
