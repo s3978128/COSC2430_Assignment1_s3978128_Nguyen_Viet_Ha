@@ -1,10 +1,10 @@
-*{
+* {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.75em;
     font-size: 16px;
 }
 
-#logo{
+#logo {
     width: 300px;
     height: 100%;
     display: block;
@@ -13,21 +13,21 @@
     cursor: pointer;
 }
 
-#welcome-msg p{
+#welcome-msg p {
     text-align: center;
     font-size: 1em;
     font-weight: bold;
     padding: 10px;
 }
 
-#yt-video{
+#yt-video {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.container{
+.container {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
@@ -35,7 +35,7 @@
     overflow: hidden;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@
     padding: 0;
 }
 
-.navbar a:visited{
+.navbar a:visited {
     color: black;
 }
 
@@ -58,8 +58,8 @@
     text-decoration: none;
 }
 
-.navbar a:hover{
-    color:rgb(243, 19, 19);
+.navbar a:hover {
+    color: rgb(243, 19, 19);
 }
 
 .mobile-nav-icon {
@@ -74,7 +74,7 @@
     cursor: pointer;
 }
 
-.mainCategory{
+.mainCategory {
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -82,18 +82,18 @@
 
 }
 
-.mainBookContainer{
+.mainBookContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.mainBook{
+.mainBook {
     text-align: center;
     margin: 30px;
 }
 
-.mainBook img{
+.mainBook img {
     width: 190px;
     height: 280px;
     background-color: lightgray;
@@ -121,26 +121,26 @@
     transition: 0.5s;
 }
 
-.arrow{
+.arrow {
     display: none;
 }
 
 .button:hover {
-    background: linear-gradient(to left, #d3cce3, #e9e4f0);
     font-size: 14px;
 }
 
-.button:hover .arrow{
+.button:hover .arrow {
     display: inline;
 }
 
 .category {
     position: relative;
-    padding-left: 35px; 
+    padding-left: 35px;
     padding-top: 30px;
+    max-width: 100px;
 }
 
-.category a{
+.category a {
     text-decoration: none;
     color: black;
     font-size: x-large;
@@ -148,14 +148,15 @@
 }
 
 .category::before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 0;
-  height: 85%;
-  width: 18px; 
-  background: linear-gradient(#e9e4f0, #d3cce3,transparent);
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    height: 85%;
+    width: 18px;
+    background: linear-gradient(#e9e4f0, #d3cce3, transparent);
 }
+
 
 @media (max-width: 768px) {
     header .navbar {
@@ -165,7 +166,7 @@
 
     header .navbar ul {
         flex-direction: column;
-  
+
 
     }
 
@@ -173,11 +174,11 @@
         display: block;
     }
 
-    #logo{
+    #logo {
         width: 200px;
     }
 
-    .category{
+    .category {
         max-width: 100%;
         padding-left: 0;
         padding-top: 0;
@@ -187,5 +188,5 @@
         content: none;
     }
 
-    
+
 }

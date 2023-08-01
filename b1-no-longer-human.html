@@ -5,16 +5,6 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Nguyen Viet Ha
 ID: s3978128
-Acknowledgement: Acknowledge the resources that you use here.
--->
-
-<!--
-RMIT University Vietnam
-Course: COSC2430 Web Programming
-Semester: 2023B
-Assessment: Assignment 1
-Author: Nguyen Viet Ha
-ID: s3978128
 Acknowledgement:
 -->
 
@@ -24,11 +14,12 @@ Acknowledgement:
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Enigmatic Tales Emporium - Contact Us</title>
+    <title>No Longer Human</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/bookstore-favicon.png" type="/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -73,41 +64,40 @@ Acknowledgement:
 
     <!-- Main content -->
     <main>
-        <h1>Contact Us</h1>
-        <form id="contactForm" action="#" method="post">
-            <label for="contactPurpose">Contact Purpose:</label>
-            <select id="contactPurpose" name="contactPurpose">
-                <option value="sell">I want to sell books</option>
-                <option value="buy">I want to buy books</option>
-            </select>
+        <!-- Breadcrumb -->
+        <ul class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="category.html">Fiction</a></li>
+            <li>No Longer Human</li>
+        </ul>
+        <!-- Breadcrumb -->
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="book-details-container">
+            <div class="images">
+                <div class="large-image">
+                    <img src="assets/no-longer-human.jpg" alt="Large Image">
+                </div>
+                <div class="small-images">
+                    <img src="assets/generic-book-img.jpg" alt="Small Image 1">
+                    <img src="assets/generic-book-img-2.jpg" alt="Small Image 2">
+                    <img src="assets/bookstore-logo.png" alt="Small Image 3">
+                </div>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="book-details">
+                <h2>No Longer Human</h2>
+                <p>Price: $19.99</p>
+                <button id="cart-button">Add to Cart</button>
+            </div>
+        </div>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
+        <div class="book-desc">
+            <h1>No Longer Human</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales mauris erat, id cursus ipsum
+                venenatis a. Nunc dignissim ipsum viverra elit pellentesque, a cursus ex hendrerit. Maecenas vel elit
+                nunc. Ut dapibus velit a accumsan commodo. Integer sodales mauris id venenatis ultrices.</p>
+        </div>
 
-            <label>Contact Preference:</label>
-            <input type="checkbox" id="emailPref" name="contactPref" value="email">
-            <label for="emailPref">By email</label>
-            <input type="checkbox" id="phonePref" name="contactPref" value="phone">
-            <label for="phonePref">By phone</label>
-
-            <label>Receive Weekly Newsletter:</label>
-            <input type="radio" id="newsletterYes" name="newsletter" value="yes" checked>
-            <label for="newsletterYes">Yes</label>
-            <input type="radio" id="newsletterNo" name="newsletter" value="no">
-            <label for="newsletterNo">No</label>
-
-            <label for="extraNotes">Extra Notes:</label><br>
-            <textarea id="extraNotes" name="extraNotes" rows="4" cols="50"></textarea><br>
-
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
     </main>
     <!-- Main content -->
 
