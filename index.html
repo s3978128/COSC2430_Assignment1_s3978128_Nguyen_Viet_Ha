@@ -33,28 +33,29 @@ Acknowledgement:
 
         <!-- vertical nav bar (horizontal on desktop devices) -->
 
-        <div class="container">
-            <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
-            <nav class="navbar">
-                <div class="mobile-nav-icon">☰</div>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="categ-1-fiction.html">Fiction</a>
-                    </li>
-                    <li>
-                        <a href="list.html">Nonfiction</a>
-                    </li>
-                    <li>
-                        <a href="list.html">Textbooks</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="categ-1-fiction.html">Fiction</a>
+                        </li>
+                        <li>
+                            <a href="list.html">Nonfiction</a>
+                        </li>
+                        <li>
+                            <a href="list.html">Textbooks</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
     </header>
@@ -64,28 +65,38 @@ Acknowledgement:
     <!-- Main content -->
     <main>
         <!-- Homepage contains at least two main categories -->
-        <div id="welcome-msg">
-            <p>
-                Welcome to Enigmatic Tales Emporium, where the allure of mystery and the depths of imagination converge
-                to captivate your senses.
-            </p>
+        <section class="welcome">
+            <div class="nav-container grid">
+                <div class="welcome-msg">
+                    <h1>
+                        Enter the Enigmatic Tales Emporium.
+                    </h1>
+                    <p>
+                        Welcome to Enigmatic Tales Emporium, where the allure of mystery and the depths of imagination converge
+                        to captivate your senses.
+                    </p>
+        
+                    <p>
+                        Step into a realm of enigmas, dark secrets, and boundless creativity, where each page turns to reveal
+                        the unknown and where readers embark on a journey beyond the ordinary.
+                    </p>
+                    
+                        <a href="#start" class="button btn-outline">
+                            Start Browsing <span class="arrow">➤</span>
+                        </a>
+                    
+                </div>
+                <div class="illustration">
+                    <img src="assets/book-stack.png" alt="book-illust">
+                </div>
+            </div>
+        </section>
 
-            <p>
-                Step into a realm of enigmas, dark secrets, and boundless creativity, where each page turns to reveal
-                the unknown and where readers embark on a journey beyond the ordinary.
-            </p>
-            <p>
-                Whether you seek the chilling suspense of Poe's short stories or the melancholic beauty of van Gogh's letters, whether you long to immerse yourself in a world of classic detectives like Sherlock Holmes or explore the dark corners of the human mind in Crime and Punishment, Enigmatic Tales Emporium promises to be an unforgettable journey into the realm of literature's most captivating enigmas and boundless imagination.
-            </p>
-            <p>
-                Our mascot, Riddlesworth the Raven, embodies the essence of our bookstore. With piercing eyes and a
-                mischievous demeanor, Riddlesworth is a symbol of curiosity and intelligence, guiding visitors through
-                the labyrinthine shelves filled with books that beckon to be discovered. As the guardian of secrets and
-                keeper of untold stories, Riddlesworth serves as a constant reminder that there's always more to explore
-                beneath the surface of every page.
-            </p>
+        <div id="start">
+            <h1>
+                Featured Books
+            </h1>
         </div>
-
         <div class="mainCategory">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
             <div class="category">
@@ -212,15 +223,19 @@ Acknowledgement:
     <!-- Footer with horizontal nav bar -->
 
     <footer>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms</a></li>
-                <li><a href="#copyright">Copyright</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#copyright">Copyright</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </footer>
 
     <!-- Footer -->
