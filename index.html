@@ -5,7 +5,8 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Nguyen Viet Ha
 ID: s3978128
-Acknowledgement: Assets are made with Canva materials. Social media icons taken from flaticon.com.
+Acknowledgement: Assets are made with Canva materials/AI generated. Social media icons taken from flaticon.com. Photo by <a href="https://unsplash.com/@clarissemeyer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clarisse Meyer</a> on <a href="https://unsplash.com/photos/jKU2NneZAbI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 -->
 
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Questrial&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap" rel="stylesheet"> 
 
 </head>
 
@@ -36,7 +37,9 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
 
         <div class="navbar">
             <div class="nav-container">
-                <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
+                <div id="logo">
+                    <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
+                </div>
                 <nav>
                     <ul>
                         <li>
@@ -69,44 +72,54 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
         <section class="welcome">
             <div class="nav-container grid">
                 <div class="welcome-msg">
+                    <p id="welcome-txt">
+                        —Welcome.
+                    </p>
                     <h1>
                         Enter the Enigmatic Tales Emporium.
                     </h1>
-                    <p>
-                        Welcome to Enigmatic Tales Emporium, where the allure of mystery and the depths of imagination converge
-                        to captivate your senses.
-                    </p>
-        
-                    <p>
-                        Step into a realm of enigmas, dark secrets, and boundless creativity, where each page turns to reveal
-                        the unknown and where readers embark on a journey beyond the ordinary.
-                    </p>
-                    
+                    <div class="welcome-content">
+                        <p>
+                            Welcome to Enigmatic Tales Emporium, where the allure of mystery and the depths of imagination converge
+                            to captivate your senses.
+                        </p>
+            
+                        <p>
+                            Step into a realm of enigmas, dark secrets, and boundless creativity, where each page turns to reveal
+                            the unknown and where readers embark on a journey beyond the ordinary.
+                        </p>
                         <a href="#start" class="button btn-welcome">
-                            Start Browsing <span class="arrow">➤</span>
+                            Start Browsing
+                            <div class="arrow">
+                                <img src="assets/arrow-right.png" alt="arrow">
+                            </div>
                         </a>
-                    
+                    </div>
                 </div>
                 <div class="illustration">
-                    <img src="assets/book-stack.png" alt="book-illust">
+                    <img src="assets/She Reads (1962). Brian T. Kershisnik (American).png" alt="book-illust">
                 </div>
             </div>
         </section>
-
-        
     </section>
 
         
     <section class="stats">
-        <h1 class="stats-heading text-center">
-            Enigmatic Tales Emporium is a one-of-a-kind bookstore that celebrates the mesmerizing allure of mystery and the unlimited potential of human imagination. 
-        </h1>
+        <div class="stats-heading text-center">
+            <div id="stats-illust">
+                <img src="assets/girl-book-pile.png" alt="girl on books">
+            </div>
+            <h1>
+                Enigmatic Tales Emporium is a one-of-a-kind bookstore that celebrates the mesmerizing allure of mystery and the unlimited potential of human imagination. 
+            </h1>
+        </div>
+
         <div class="container text-center">
             <div class="content">
                 <h2 class="stats-heading">
                     10000+
                 </h2>
-                <img src="assets/book-icon.png" alt="book icon">
+                <img src="assets/books.gif" alt="book icon">
                 <h3>
                     Books
                 </h3>
@@ -136,113 +149,110 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
 
     </section>
 
-        <div id="start">
-            <h1>
-                Featured Books
-            </h1>
-        </div>
-        <section class="mainCategory">
+        <section class="main-category">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <div id="start">
+            </div>
             <div class="category">
                 <a href="">
-                    Fiction
+                    —Fiction
                 </a>
             </div>
 
             <!-- Book showcase, book img same size -->
-            <div class="mainBookContainer">
-                <div class="mainBook">
+            <div class="main-book-container">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
+                    <a href="b1-no-longer-human.html" class="button">See Details</a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
+                    <a href="b1-no-longer-human.html" class="button">See Details</a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
+                    <a href="b1-no-longer-human.html" class="button">See Details</a>
                 </div>
             </div>
             <!-- Book showcase, book img same size -->
 
         </section>
 
-        <section class="mainCategory">
+        <section class="main-category">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
             <div class="category">
                 <a href="">
-                    Nonfiction
+                    —Nonfiction
                 </a>
             </div>
 
             <!-- Book showcase, book img same size -->
-            <div class="mainBookContainer">
-                <div class="mainBook">
+            <div class="main-book-container">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a class="button">See Details <span class="arrow">➤</span></a>
+                    <a class="button">See Details</a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a class="button">See Details <span class="arrow">➤</span></a>
+                    <a class="button">See Details</a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a class="button">See Details <span class="arrow">➤</span></a>
+                    <a class="button">See Details</a>
                 </div>
             </div>
             <!-- Book showcase, book img same size -->
 
         </section>
 
-        <section class="mainCategory">
+        <section class="main-category">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
             <div class="category">
                 <a href="">
-                    Textbooks
+                    —Textbooks
                 </a>
             </div>
 
             <!-- Book showcase, book img same size -->
-            <div class="mainBookContainer">
-                <div class="mainBook">
+            <div class="main-book-container">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a class="button">See Details <span class="arrow">➤</span></a>
+                    <a class="button">See Details</a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a class="button">See Details <span class="arrow">➤</span></a>
+                    <a class="button">See Details</a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
-                    <a class="button">See Details <span class="arrow">➤</span></a>
+                    <a class="button">See Details</a>
                 </div>
             </div>
         </section>
@@ -259,6 +269,20 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
             </div>
         </section>
         <!-- Rich Media Section -->
+
+        <div class="news-container">
+            <div class="image-column">
+              <img src="assets/book-stack.png" alt="Newsletter Image">
+            </div>
+            <div class="details-column">
+              <h2>Subscribe to our Newsletter</h2>
+              <p>Receive updates, news, and special offers straight to your inbox!</p>
+              <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+        </div>
 
     </main>
     <!-- Main content -->

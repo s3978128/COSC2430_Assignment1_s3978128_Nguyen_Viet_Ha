@@ -5,7 +5,7 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Nguyen Viet Ha
 ID: s3978128
-Acknowledgement:
+Acknowledgement: Assets are made with Canva materials. Social media icons taken from flaticon.com.
 -->
 
 <!DOCTYPE html>
@@ -14,14 +14,15 @@ Acknowledgement:
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Enigmatic Tales Emporium | Fiction</title>
+    <title>Enigmatic Tales Emporium</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/bookstore-favicon.png" type="/png">
+    <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap" rel="stylesheet"> 
 
 </head>
 
@@ -33,32 +34,31 @@ Acknowledgement:
 
         <!-- vertical nav bar (horizontal on desktop devices) -->
 
-        <div class="container">
-            <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
-            <nav class="navbar">
-                <div class="mobile-nav-icon">☰</div>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="list.html">Fiction</a>
-                    </li>
-                    <li>
-                        <a href="list.html">Nonfiction</a>
-                    </li>
-                    <li>
-                        <a href="list.html">Textbooks</a>
-                    </li>
-                    <li>
-                        <a href="book.html">I feel lucky</a>
-                        <!-- Leads to a random book details page -->
-                    </li>
-                    <li>
-                        <a href="contact.html">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <div id="logo">
+                    <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="categ-1-fiction.html">Fiction</a>
+                        </li>
+                        <li>
+                            <a href="list.html">Nonfiction</a>
+                        </li>
+                        <li>
+                            <a href="list.html">Textbooks</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
     </header>
@@ -67,8 +67,7 @@ Acknowledgement:
 
     <!-- Main content -->
     <main>
-
-        <div class="mainCategory">
+        <section class="main-category">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
             <div class="category">
                 <a href="">
@@ -77,22 +76,22 @@ Acknowledgement:
             </div>
 
             <!-- Book showcase, book img same size -->
-            <div class="mainBookContainer">
-                <div class="mainBook">
+            <div class="main-book-container">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
@@ -102,9 +101,9 @@ Acknowledgement:
             </div>
             <!-- Book showcase, book img same size -->
 
-        </div>
+        </section>
 
-        <div class="mainCategory">
+        <section class="main-category">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
             <div class="category">
                 <a href="">
@@ -113,22 +112,22 @@ Acknowledgement:
             </div>
 
             <!-- Book showcase, book img same size -->
-            <div class="mainBookContainer">
-                <div class="mainBook">
+            <div class="main-book-container">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
@@ -138,9 +137,9 @@ Acknowledgement:
             </div>
             <!-- Book showcase, book img same size -->
 
-        </div>
+        </section>
 
-        <div class="mainCategory">
+        <section class="main-category">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
             <div class="category">
                 <a href="">
@@ -149,22 +148,22 @@ Acknowledgement:
             </div>
 
             <!-- Book showcase, book img same size -->
-            <div class="mainBookContainer">
-                <div class="mainBook">
+            <div class="main-book-container">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
@@ -172,11 +171,10 @@ Acknowledgement:
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
             </div>
-            <!-- Book showcase, book img same size -->
+        </section>
+        <!-- Book showcase, book img same size -->
 
-        </div>
-
-        <div class="mainCategory">
+        <section class="main-category">
             <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
             <div class="category">
                 <a href="">
@@ -185,22 +183,22 @@ Acknowledgement:
             </div>
 
             <!-- Book showcase, book img same size -->
-            <div class="mainBookContainer">
-                <div class="mainBook">
+            <div class="main-book-container">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
                     </p>
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
-                <div class="mainBook">
+                <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
                     <p class="book-title">
                         No Longer Human
@@ -208,9 +206,9 @@ Acknowledgement:
                     <a class="button">See Details <span class="arrow">➤</span></a>
                 </div>
             </div>
-            <!-- Book showcase, book img same size -->
+        </section>
+        <!-- Book showcase, book img same size -->
 
-        </div>
 
     </main>
     <!-- Main content -->
@@ -219,15 +217,24 @@ Acknowledgement:
     <!-- Footer with horizontal nav bar -->
 
     <footer>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms</a></li>
-                <li><a href="#copyright">Copyright</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#copyright">Copyright</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social-media-icons">
+                <a href="#" class="icon"><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href="#" class="icon"><img src="assets/twitter.png" alt="Twitter"></a>
+                <a href="#" class="icon"><img src="assets/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
     </footer>
 
     <!-- Footer -->
