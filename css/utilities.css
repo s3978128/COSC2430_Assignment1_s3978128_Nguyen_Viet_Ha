@@ -1,3 +1,13 @@
+:root{
+    --primary-color: #fa9080;
+    --bg-color: #fadccd;
+    --text-color: #583a27;
+    --secondary-color: #f9c9a7;
+    --cream-color: #f8e9e8;
+    --dark-color: #583a27;
+
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -29,7 +39,7 @@ h1, h2{
     font-weight: bolder;
     line-height: 2em;
     margin: 10px 0;
-    font-family: 'Prata', serif;
+    font-family: 'Mali', cursive;
 }
 
 p{
@@ -42,8 +52,8 @@ img{
 
 .ri-arrow-right-s-line img{
     opacity: 0.8;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     padding-top: 5px;
 }
 
@@ -76,12 +86,12 @@ img{
 .nav-container {
     display: flex;
     justify-content: space-between;
-    margin-right: 3%;
+    margin-right: 8%;
 }
 
 .navbar ul{
     display: flex;
-    padding-top: 1%;
+    padding: 2% 0;
     align-items: center;
 }
 
@@ -100,8 +110,53 @@ img{
 }
 
 .navbar a:hover {
-    color: rgb(209, 106, 77);
-    border-bottom: 2px rgb(209, 145, 93) solid;
+    color: var(--cream-color);
+    border-bottom: 2px var(--cream-color) solid;
+}
+
+.main-category {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    margin-bottom: 40px;
+
+}
+
+.main-book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-book {
+    text-align: center;
+    margin: 30px;
+}
+
+.main-book img {
+    width: 190px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-title {
+    margin: 15px 0;
+    font-size: large;
+}
+
+.category {
+    font-style: italic;
+    text-decoration: underline;
+    margin-left: 8%;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
 }
 
 footer .nav-container {
@@ -109,6 +164,7 @@ footer .nav-container {
     justify-content: center;
     font-size: medium;
     border-bottom: 2px transparent solid;
+    width: 100%;
 }
 
 .social-media-icons .icon{
@@ -139,7 +195,7 @@ footer .nav-container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 8rem;
     height: 100%;
 }
 
@@ -148,7 +204,7 @@ footer .nav-container {
     background: var(--primary-color);
     border-radius: 30px;
     font-weight: bolder;
-    font-size: 14px;
+    font-size: small;
     padding: 12px;
     text-decoration: none;
     cursor: pointer;
@@ -175,7 +231,46 @@ footer .nav-container {
     display: none;
 }
 
+
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInBottom{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 992px){
+    .category {
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .button{
+        font-size: small;
+    }
+
     .navbar{
         padding: 3%;
     }
@@ -190,7 +285,21 @@ footer .nav-container {
 }
 
 @media (max-width: 768px){
-    .nav-container{
+    .button{
+        font-size: small;
+    }
+
+    .button:hover .ri-arrow-right-s-line{
+        display: none;
+    }
+    
+    .category {
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    header .nav-container{
         padding: 10px;
         flex-direction: column;
         justify-items: center;
@@ -213,8 +322,8 @@ footer .nav-container {
         margin-bottom: 8%;
     }
 
-    nav a:hover{
-        border-bottom: none;
+    .navbar a:hover{
+        border-bottom: transparent;
     }
 
     header .navbar ul {
@@ -231,8 +340,14 @@ footer .nav-container {
         padding: 10px;
     }
 
-    footer .nav-container {
-        font-size: x-small;
+    footer .navbar a,
+    .social-media-icons i
+     {
+        font-size: 0.8em;
+    }
+
+    .social-media-icons{
+        margin: 2% 0;
     }
 
 }

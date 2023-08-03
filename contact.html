@@ -5,17 +5,8 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Nguyen Viet Ha
 ID: s3978128
-Acknowledgement: Acknowledge the resources that you use here.
--->
-
-<!--
-RMIT University Vietnam
-Course: COSC2430 Web Programming
-Semester: 2023B
-Assessment: Assignment 1
-Author: Nguyen Viet Ha
-ID: s3978128
-Acknowledgement:
+Acknowledgement: Assets are made with Canva materials/AI generated. Social media icons taken from flaticon.com. Photo by <a href="https://unsplash.com/@clarissemeyer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clarisse Meyer</a> on <a href="https://unsplash.com/photos/jKU2NneZAbI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 -->
 
 <!DOCTYPE html>
@@ -24,14 +15,29 @@ Acknowledgement:
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Enigmatic Tales Emporium | Contact Us</title>
+    <title>Enigmatic Tales Emporium</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon Link-->
     <link rel="icon" href="assets/bookstore-favicon.png" type="/png">
-    <link rel="stylesheet" href="style.css">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/contact-style.css">
+
+    <!--Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <!--Boxicons Link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Remixicons Link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
@@ -40,36 +46,40 @@ Acknowledgement:
 
     <header>
         <!-- Header with logo image -->
-
         <!-- vertical nav bar (horizontal on desktop devices) -->
-
-        <div class="container">
-            <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
-            <nav class="navbar">
-                <div class="mobile-nav-icon">☰</div>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="categ-1-fiction.html">Fiction</a>
-                    </li>
-                    <li>
-                        <a href="list.html">Nonfiction</a>
-                    </li>
-                    <li>
-                        <a href="list.html">Textbooks</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <div id="logo">
+                    <img src="assets/bookstore-favicon.png" alt="bookstore logo">
+                    <h1>
+                        Enigmatic Tales Emporium
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+                        <div id="nav-list">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="categ-1-fiction.html">Fiction</a>
+                            </li>
+                            <li>
+                                <a href="list.html">Nonfiction</a>
+                            </li>
+                            <li>
+                                <a href="list.html">Textbooks</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contacts</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
     </header>
-
-    <!-- Main header -->
 
     <!-- Main content -->
     <main>
@@ -90,44 +100,57 @@ Acknowledgement:
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required>
 
-            <label>Contact Preference:</label>
-            <input type="checkbox" id="emailPref" name="contactPref" value="email">
-            <label for="emailPref">By email</label>
-            <input type="checkbox" id="phonePref" name="contactPref" value="phone">
-            <label for="phonePref">By phone</label>
+            <div id="choices">
+                <div id="email-pref">
+                    <label>Contact Preference:</label>
+                    <input type="checkbox" name="contactPref" value="email">
+                    <label for="emailPref">By email</label>
+                    <input type="checkbox" name="contactPref" value="phone">
+                    <label for="phonePref">By phone</label>
+                </div>
 
-            <label>Receive Weekly Newsletter:</label>
-            <input type="radio" id="newsletterYes" name="newsletter" value="yes" checked>
-            <label for="newsletterYes">Yes</label>
-            <input type="radio" id="newsletterNo" name="newsletter" value="no">
-            <label for="newsletterNo">No</label>
+                <div id="newsletter-pref">
+                    <label>Receive Weekly Newsletter:</label>
+                    <input type="radio" name="newsletter" value="yes" checked>
+                    <label for="newsletterYes">Yes</label>
+                    <input type="radio" name="newsletter" value="no">
+                    <label for="newsletterNo">No</label>
+                </div>
 
-            <label for="extraNotes">Extra Notes:</label><br>
-            <textarea id="extraNotes" name="extraNotes" rows="4" cols="50"></textarea><br>
+                <label for="extraNotes">Extra Notes:</label>
+                <textarea id="extraNotes" name="extraNotes" rows="8"></textarea><br>
 
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+                <button class="button" type="submit">Submit</button>
+                <button class="button" type="reset">Reset</button>
+            </div>
         </form>
     </main>
     <!-- Main content -->
 
     <!-- Footer -->
     <!-- Footer with horizontal nav bar -->
-
     <footer>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms</a></li>
-                <li><a href="#copyright">Copyright</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#copyright">Copyright</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social-media-icons">
+                <a href="#" class="icon"><i class="ri-facebook-circle-line"></i></a>
+                <a href="#" class="icon"><i class="ri-twitter-line"></i></a>
+                <a href="#" class="icon"><i class="ri-instagram-line"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Footer -->
-
-</body>
+    <!--JS Link-->
+    <script src="script.js"></script>
 
 </html>

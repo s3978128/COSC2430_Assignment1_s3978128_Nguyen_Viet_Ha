@@ -5,7 +5,8 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Nguyen Viet Ha
 ID: s3978128
-Acknowledgement: Assets are made with Canva materials. Social media icons taken from flaticon.com.
+Acknowledgement: Assets are made with Canva materials/AI generated. Social media icons taken from flaticon.com. Photo by <a href="https://unsplash.com/@clarissemeyer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clarisse Meyer</a> on <a href="https://unsplash.com/photos/jKU2NneZAbI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 -->
 
 <!DOCTYPE html>
@@ -22,20 +23,21 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
     <link rel="icon" href="assets/bookstore-favicon.png" type="/png">
 
     <!--CSS Links-->
-    <link rel="stylesheet" href="utilities.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/utilities.css">
 
     <!--Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap"
+        rel="stylesheet">
 
     <!--Boxicons Link-->
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <!--Remixicons Link-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -54,29 +56,29 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
                 </div>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="categ-1-fiction.html">Fiction</a>
-                        </li>
-                        <li>
-                            <a href="list.html">Nonfiction</a>
-                        </li>
-                        <li>
-                            <a href="list.html">Textbooks</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contacts</a>
-                        </li>
-                        <div class="bx bx-menu" id="menu-icon"></div>
+                        <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+                        <div id="nav-list">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="categ-1-fiction.html">Fiction</a>
+                            </li>
+                            <li>
+                                <a href="list.html">Nonfiction</a>
+                            </li>
+                            <li>
+                                <a href="list.html">Textbooks</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contacts</a>
+                            </li>
+                        </div>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
-    <!-- Main header -->
 
     <!-- Main content -->
     <main>
@@ -228,7 +230,6 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
 
     <!-- Footer -->
     <!-- Footer with horizontal nav bar -->
-
     <footer>
         <div class="navbar">
             <div class="nav-container">
@@ -243,15 +244,14 @@ Acknowledgement: Assets are made with Canva materials. Social media icons taken 
                 </nav>
             </div>
             <div class="social-media-icons">
-                <a href="#" class="icon"><img src="assets/facebook.png" alt="Facebook"></a>
-                <a href="#" class="icon"><img src="assets/twitter.png" alt="Twitter"></a>
-                <a href="#" class="icon"><img src="assets/instagram.png" alt="Instagram"></a>
+                <a href="#" class="icon"><i class="ri-facebook-circle-line"></i></a>
+                <a href="#" class="icon"><i class="ri-twitter-line"></i></a>
+                <a href="#" class="icon"><i class="ri-instagram-line"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Footer -->
-
-</body>
+    <!--JS Link-->
+    <script src="script.js"></script>
 
 </html>
