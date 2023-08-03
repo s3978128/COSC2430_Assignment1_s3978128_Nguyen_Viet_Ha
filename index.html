@@ -18,12 +18,26 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
     <title>Enigmatic Tales Emporium</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon Link-->
     <link rel="icon" href="assets/bookstore-favicon.png" type="/png">
+
+    <!--CSS Links-->
     <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bentham&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <!--Boxicons Link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Remixicons Link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
@@ -32,43 +46,43 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
 
     <header>
         <!-- Header with logo image -->
-
         <!-- vertical nav bar (horizontal on desktop devices) -->
-
         <div class="navbar">
             <div class="nav-container">
                 <div id="logo">
-                    <img id="logo" src="assets/bookstore-logo.png" alt="bookstore logo">
+                    <img src="assets/bookstore-favicon.png" alt="bookstore logo">
+                    <h1>
+                        Enigmatic Tales Emporium
+                    </h1>
                 </div>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="categ-1-fiction.html">Fiction</a>
-                        </li>
-                        <li>
-                            <a href="list.html">Nonfiction</a>
-                        </li>
-                        <li>
-                            <a href="list.html">Textbooks</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contacts</a>
-                        </li>
+                        <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+                        <div id="nav-list">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="categ-1-fiction.html">Fiction</a>
+                            </li>
+                            <li>
+                                <a href="list.html">Nonfiction</a>
+                            </li>
+                            <li>
+                                <a href="list.html">Textbooks</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contacts</a>
+                            </li>
+                        </div>
                     </ul>
                 </nav>
             </div>
         </div>
-
     </header>
-
-    <!-- Main header -->
 
     <!-- Main content -->
     <main>
-        <!-- Homepage contains at least two main categories -->
         <section class="welcome">
             <div class="nav-container grid">
                 <div class="welcome-msg">
@@ -80,77 +94,81 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
                     </h1>
                     <div class="welcome-content">
                         <p>
-                            Welcome to Enigmatic Tales Emporium, where the allure of mystery and the depths of imagination converge
+                            Welcome to Enigmatic Tales Emporium, where the allure of mystery and the depths of
+                            imagination converge
                             to captivate your senses.
                         </p>
-            
+
                         <p>
-                            Step into a realm of enigmas, dark secrets, and boundless creativity, where each page turns to reveal
+                            Step into a realm of enigmas, dark secrets, and boundless creativity, where each page turns
+                            to reveal
                             the unknown and where readers embark on a journey beyond the ordinary.
                         </p>
-                        <a href="#start" class="button btn-welcome">
-                            Start Browsing
-                            <div class="arrow">
-                                <img src="assets/arrow-right.png" alt="arrow">
-                            </div>
-                        </a>
+                        <div class="button btn-welcome">
+                            <a href="#start">
+                                Start Browsing
+                                <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="illustration">
-                    <img src="assets/She Reads (1962). Brian T. Kershisnik (American).png" alt="book-illust">
+                    <img src="assets/bear-illust.png" alt="book-illust">
+                    <div id="blob-shadow">
+                        <img src="assets/blob.png" alt="blob">
+                    </div>
                 </div>
             </div>
         </section>
-    </section>
+  
+        <section class="stats">
+            <div class="stats-heading text-center">
+                <div id="stats-illust">
+                    <img src="assets/girl-book-pile.png" alt="girl on books">
+                </div>
+                <h1>
+                    Enigmatic Tales Emporium is a one-of-a-kind bookstore that celebrates the mesmerizing allure of
+                    mystery and the unlimited potential of human imagination.
+                </h1>
+            </div>
 
-        
-    <section class="stats">
-        <div class="stats-heading text-center">
-            <div id="stats-illust">
-                <img src="assets/girl-book-pile.png" alt="girl on books">
+            <div class="container text-center">
+                <div class="content">
+                    <h2 class="stats-heading">
+                        10000+
+                    </h2>
+                    <img src="assets/books.gif" alt="book icon">
+                    <h3>
+                        Books
+                    </h3>
+                </div>
+                <div class="content">
+                    <h2 class="stats-heading">
+                        1000+
+                    </h2>
+                    <img src="assets/author-icon.png" alt="author icon">
+                    <h3>
+                        Authors
+                    </h3>
+                </div>
+                <div class="content">
+                    <h2 class="stats-heading">
+                        1000+
+                    </h2>
+                    <img src="assets/publisher-icon.png" alt="publisher icon">
+                    <h3>
+                        Publishers
+                    </h3>
+                </div>
             </div>
-            <h1>
-                Enigmatic Tales Emporium is a one-of-a-kind bookstore that celebrates the mesmerizing allure of mystery and the unlimited potential of human imagination. 
-            </h1>
-        </div>
+            <p>
+                * Stats are for illustration purposes only.
+            </p>
 
-        <div class="container text-center">
-            <div class="content">
-                <h2 class="stats-heading">
-                    10000+
-                </h2>
-                <img src="assets/books.gif" alt="book icon">
-                <h3>
-                    Books
-                </h3>
-            </div>
-            <div class="content">
-                <h2 class="stats-heading">
-                    1000+
-                </h2>
-                <img src="assets/author-icon.png" alt="author icon">
-                <h3>
-                    Authors
-                </h3>
-            </div>
-            <div class="content">
-                <h2 class="stats-heading">
-                    1000+
-                </h2>
-                <img src="assets/publisher-icon.png" alt="publisher icon">
-                <h3>
-                    Publishers
-                </h3>
-            </div>
-        </div>
-        <p>
-            * Stats are for illustration purposes only.
-        </p>
-
-    </section>
+        </section>
 
         <section class="main-category">
-            <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <!-- a category name as a link -->
             <div id="start">
             </div>
             <div class="category">
@@ -159,7 +177,7 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
                 </a>
             </div>
 
-            <!-- Book showcase, book img same size -->
+            <!-- Book showcase -->
             <div class="main-book-container">
                 <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
@@ -183,19 +201,18 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
                     <a href="b1-no-longer-human.html" class="button">See Details</a>
                 </div>
             </div>
-            <!-- Book showcase, book img same size -->
 
         </section>
 
         <section class="main-category">
-            <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <!-- a category name as a link -->
             <div class="category">
                 <a href="">
                     —Nonfiction
                 </a>
             </div>
 
-            <!-- Book showcase, book img same size -->
+            <!-- Book showcase -->
             <div class="main-book-container">
                 <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
@@ -219,19 +236,18 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
                     <a class="button">See Details</a>
                 </div>
             </div>
-            <!-- Book showcase, book img same size -->
 
         </section>
 
         <section class="main-category">
-            <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <!-- a category name as a link -->
             <div class="category">
                 <a href="">
                     —Textbooks
                 </a>
             </div>
 
-            <!-- Book showcase, book img same size -->
+            <!-- Book showcase -->
             <div class="main-book-container">
                 <div class="main-book">
                     <img src="assets/no-longer-human.jpg" alt="book 1">
@@ -256,8 +272,6 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
                 </div>
             </div>
         </section>
-        <!-- Book showcase, book img same size -->
-       
 
         <!-- Rich Media Section -->
         <section class="rich-media">
@@ -268,28 +282,24 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
                     allowfullscreen></iframe>
             </div>
         </section>
-        <!-- Rich Media Section -->
 
-        <div class="news-container">
+        <!--Newsletter Section-->
+        <section class="news-container">
             <div class="image-column">
-              <img src="assets/book-stack.png" alt="Newsletter Image">
+                <img src="assets/book-stack.png" alt="Newsletter Image">
             </div>
             <div class="details-column">
-              <h2>Subscribe to our Newsletter</h2>
-              <p>Receive updates, news, and special offers straight to your inbox!</p>
-              <form>
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-              </form>
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Receive updates, news, and special offers straight to your inbox!</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
-        </div>
-
+        </section>
     </main>
-    <!-- Main content -->
 
-    <!-- Footer -->
     <!-- Footer with horizontal nav bar -->
-
     <footer>
         <div class="navbar">
             <div class="nav-container">
@@ -304,14 +314,15 @@ Acknowledgement: Assets are made with Canva materials/AI generated. Social media
                 </nav>
             </div>
             <div class="social-media-icons">
-                <a href="#" class="icon"><img src="assets/facebook.png" alt="Facebook"></a>
-                <a href="#" class="icon"><img src="assets/twitter.png" alt="Twitter"></a>
-                <a href="#" class="icon"><img src="assets/instagram.png" alt="Instagram"></a>
+                <a href="#" class="icon"><i class="ri-facebook-circle-line"></i></a>
+                <a href="#" class="icon"><i class="ri-twitter-line"></i></a>
+                <a href="#" class="icon"><i class="ri-instagram-line"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Footer -->
+    <!--JS Link-->
+    <script src="script.js"></script>
 
 </body>
 

@@ -1,8 +1,8 @@
 :root{
-    --primary-color: rgb(199, 210, 216);
+    --primary-color: #fd7c87;
     --bg-color: rgb(242, 243, 247);
     --text-color: rgb(42, 47, 79);
-    --secondary-color: rgb(252, 209, 209);
+    --secondary-color: #ffcd88;
     --cream-color: rgb(236, 226, 225);
 }
 
@@ -58,14 +58,6 @@ padding: 5px;
 margin-right: 10px;
 }
 
-#welcome-msg p {
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px;
-    z-index: 1;
-    position: relative;
-}
 
 #start{
     display: flex;
@@ -79,21 +71,24 @@ margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .welcome{
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
     background-color: var(--primary-color);
     position: relative;
-    padding: 10px 120px;
+    padding: 5% 8% 5% 10%;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
 }
 
 .welcome::before,
 .welcome::after{
     content:'';
     position:absolute;
-    height: 130px;
+    height: 100px;
     bottom: -70px;
     right:0;
     left:0;
@@ -105,7 +100,8 @@ margin-right: 10px;
 }
 
 .welcome-msg{
-    animation: slideInLeft 1s ease-in-out;
+    animation: slideInLeft 0.55s ease-in-out;
+    z-index: 4;
 }
 
 #welcome-txt{
@@ -114,12 +110,12 @@ margin-right: 10px;
 }
 
 .welcome-content{
-    margin-left: 50px;
+    margin-left: 10%;
     margin-bottom: 30px;
 }
 
 .welcome-msg h1{
-    font-size: 30px;
+    font-size: xx-large;
 }
 
 .welcome-msg p{
@@ -129,12 +125,22 @@ margin-right: 10px;
 
 .illustration{
     z-index: 1;
-    animation: slideInRight 1s ease-in-out;
+}
+
+.illustration #blob-shadow{
+    z-index: -5;
+    position: absolute;
+    bottom: 8em;
+    right: 8em;
+    width: 40%;
+    height: auto;
+    opacity: 0.7;
 }
 
 .illustration img{
-    border-radius: 100%;
-    opacity: 0.9;
+    z-index: 3;
+    position: relative;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .main-category {
@@ -177,17 +183,30 @@ h1 .stats-heading{
 }
 
 .btn-welcome{
-    background-color: transparent;
-    border: 2px solid var(--text-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
     z-index: 1;
-    position: relative;
-    padding: 15px;
+    position: absolute;
+    border: 2px solid transparent;
 }
 
 .btn-welcome:hover{
-    background-color: var(--bg-color);
-    opacity: 0.9;
+    background-color: transparent;
+    border: 2px solid var(--bg-color);
+    color: var(--text-color);
+}
+
+.btn-welcome a,
+.btn-welcome i{
+    vertical-align: middle;
+}
+
+.btn-welcome i{
+    font-size: 20px;
+}
+
+.btn-welcome a{
+    color: var(--text-color);
 }
 
 .category {
@@ -292,24 +311,42 @@ h1 .stats-heading{
         padding-left: 0;
         padding-top: 0;
     }
-
-    .category::before {
-        content: none;
-    }
-
-    .welcome{
-       padding: 30px;
-       height: 450px;
-    }
-
     .welcome .grid{
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 1em;
+    }
+
+    .illustration #blob-shadow{
+        width: 30%;
+        top: 2em;
+        right: 10em;
     }
 
     .stats .container,
     .stats h1{
         padding: 0 40px;
         font-size: medium;
+    }
+
+    .welcome{
+        min-height: 80vh;
+        padding-right: 15%;
+    }
+
+    .welcome-msg h1{
+        font-size: large;
+    }
+
+    .welcome-msg p{
+        font-size: smaller;
+    }
+
+    .illustration img{
+        width: 130%;
+    }
+
+    .button{
+        font-size: small;
     }
 }
 
@@ -320,39 +357,36 @@ h1 .stats-heading{
         padding-top: 0;
     }
 
-    .category::before {
-        content: none;
-    }
-
     .welcome{
-       padding: 10px;
-       height: 350px;
+        padding-bottom: 10%;
     }
 
-    .welcome h1{
-        font-size: medium;
+    .welcome,
+    .welcome-content
+    {
+        text-align: center;
+        margin: 0;   
     }
-    
-    .welcome p{
-        font-size: small;
+
+    .btn-welcome{
+        position: relative;
+        width: 50%;
     }
-    
+
+    .button:hover .ri-arrow-right-s-line{
+        display: none;
+    }
+
     .welcome .grid{
-        grid-template-columns: 2.5fr 1fr;
+        grid-template-columns: none;
     }
 
-    .stats .container,
-    .stats h1{
-        padding: 0 40px;
-        font-size: small;
+    .illustration #blob-shadow{
+        width: 70%;
     }
 
-    .welcome-msg{
-        animation: none;
+    .illustration img{
+        width: 80%;
     }
-    
-    .illustration{
-        animation: none;
-    }
-    
+
 }
