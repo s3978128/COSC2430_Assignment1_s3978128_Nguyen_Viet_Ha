@@ -82,16 +82,6 @@
     z-index: 1;
 }
 
-.illustration #blob-shadow{
-    z-index: -5;
-    position: absolute;
-    bottom: 22%;
-    right: 10%;
-    width: 30%;
-    height: auto;
-    opacity: 0.7;
-}
-
 .illustration img{
     z-index: 3;
     position: relative;
@@ -232,12 +222,6 @@ form button{
         gap: 1em;
     }
 
-    .illustration #blob-shadow{
-        width: 28%;
-        bottom: 25%;
-        right: 18%;
-    }
-
     .stats .container,
     #stats-h1{
         padding: 0 20%;
@@ -295,12 +279,6 @@ form button{
 
     .welcome .grid{
         grid-template-columns: none;
-    }
-
-    .illustration #blob-shadow{
-        width: 60%;
-        bottom: 5%;
-        right: 15%;
     }
 
     .illustration img{
