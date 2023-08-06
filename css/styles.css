@@ -1,0 +1,363 @@
+/*Define variables for color palette: */
+
+:root{
+    --primary-color:#bebddb;
+    --secondary-color: #eab2b8;
+    --bg-color: #fdf0f0;
+    --text-color: #282738;
+    --cream-color: #f0dfdf;
+    --dark-color: #b93b76;
+}
+
+/*Reset default CSS, define normal behavior*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.75em;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h1, h2{
+    font-weight: bolder;
+    line-height: 1.5em;
+    margin: 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+    font-size: var(--h1-font);
+}
+
+h2{
+    font-size: var(--h2-font);
+
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+/*Button styles*/
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: small;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+}
+
+/*Same CSS for header and footer navbar*/
+
+header,
+footer{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    transition: all 0.5s ease;
+    background: var(--text-color);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    margin: 0 5px;
+}
+
+nav a:hover{
+    color: var(--dark-color);
+    border-bottom: 2px var(--dark-color) solid;
+}
+
+/*Header logo and navbar*/
+
+header {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    z-index: 100;
+    padding: 1% 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.sticky{
+    background-color: rgba(21, 20, 45, 0.7);
+    backdrop-filter: blur(35px);
+}
+
+header.sticky nav a,
+header.sticky .h-right i,
+header.sticky .logo h1{
+    color: var(--bg-color);
+}
+
+header.sticky .logo span{
+    color: var(--secondary-color);
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 35px;
+    height: 35px;
+}
+
+.logo span{
+    color: var(--dark-color);
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.logo h1{
+    font-size: 1em;
+    margin-left: 3%;
+    font-weight: 800;
+}
+
+header nav a,
+.h-right i{
+    display: block;
+    font-weight: 500;
+    padding: 10px;
+    padding-bottom: 3px;
+    border-bottom: 2px transparent solid;
+    transition: 0.5s ease;
+    color: var(--text-color);
+}
+
+.h-right{
+    display: flex;
+    margin: 0 5%;
+}
+
+.h-right i{
+    font-size: var(--p-font);
+    vertical-align: center;
+}
+
+.h-right i:hover{
+    color: var(--dark-color);
+    transform:translateY(-2px);
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 101;
+    padding: 8px;
+    display: none;
+}
+
+/*Footer navbar*/
+footer{
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    border-bottom: 2px transparent solid;
+    margin: 3% 0;
+}
+
+footer nav a{
+    color: white;
+    transition: all 0.5s ease;
+    padding: 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px transparent solid;
+}
+
+.soc-med-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc-med-icons i{
+    font-size: xx-large;
+    font-weight: 500;
+    color: white;
+    transition: all 0.5s ease;
+    padding: 10px;
+    padding-bottom: 6px;
+ }
+
+.soc-med-icons i:hover{
+    transform: translateY(-5px);
+    border-bottom: none;
+}
+
+/*Keyframes for animations*/
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInBottom{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+/*Media queries*/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .category {
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .btn{
+        font-size: small;
+    }
+
+    .navbar{
+        padding: 3%;
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+    .navbar a:hover{
+        border-bottom: none;
+    }
+
+}
+
+@media (max-width: 768px){
+    .btn{
+        font-size: small;
+    }
+
+    .btn:hover .ri-arrow-right-s-line{
+        display: none;
+    }
+    
+    .category {
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    header .navbar{
+        padding: 10px;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        font-size: small;
+        animation: slideInBottom 1s ease-in;
+    }
+
+    #nav-list{
+        text-align: center;
+        display: none;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+
+    .logo{
+        width: 60%;
+        margin-bottom: 8%;
+    }
+
+    .navbar a:hover{
+        border-bottom: transparent;
+    }
+
+    header .navbar ul {
+        padding: 0 3rem;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5%;
+    }
+
+    .btn {
+        font-size: smaller;
+        padding: 10px;
+    }
+
+    footer .navbar a,
+    #social-media-icons i
+     {
+        font-size: 0.8em;
+    }
+
+    #social-media-icons,
+    #footer-nav{
+        width: 100%;
+    }
+
+}

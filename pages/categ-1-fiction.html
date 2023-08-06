@@ -1,0 +1,256 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Whiskered Leaves Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon Link-->
+    <link rel="icon" href="assets/bookstore-favicon.png" type="/png">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Prata&family=Cormorant+Garamond&family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Boxicons Link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/boxicons.min.css">
+
+    <!--Remixicons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <!-- Main header -->
+
+    <header>
+        <!-- Header with logo image -->
+
+        <div class="logo">
+            <img src="../assets/bookstore-favicon.png" alt="Bookstore Logo">
+            <h1>
+                Whiskered Leaves <span>Books</span>
+            </h1>
+        </div>
+
+        <!-- vertical menu (horizontal on desktop devices) -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="categ-1-fiction.html">Fiction</a>
+                </li>
+                <li>
+                    <a href="list.html">Nonfiction</a>
+                </li>
+                <li>
+                    <a href="list.html">Textbooks</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="h-right">
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-3-line"></i>
+            <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+        </div>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="main-category">
+            <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <div class="category">
+                <a href="">
+                    Literary Fiction
+                </a>
+            </div>
+
+            <!-- Book showcase, book img same size -->
+            <div class="main-book-container">
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a href="b1-no-longer-human.html" class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+            </div>
+            <!-- Book showcase, book img same size -->
+
+        </section>
+
+        <section class="main-category">
+            <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <div class="category">
+                <a href="">
+                    Romance
+                </a>
+            </div>
+
+            <!-- Book showcase, book img same size -->
+            <div class="main-book-container">
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+            </div>
+            <!-- Book showcase, book img same size -->
+
+        </section>
+
+        <section class="main-category">
+            <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <div class="category">
+                <a href="">
+                    Mystery
+                </a>
+            </div>
+
+            <!-- Book showcase, book img same size -->
+            <div class="main-book-container">
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- Book showcase, book img same size -->
+
+        <section class="main-category">
+            <!-- a category name as a link and at least three books displayed as links to the Book Detail page -->
+            <div class="category">
+                <a href="">
+                    Horror
+                </a>
+            </div>
+
+            <!-- Book showcase, book img same size -->
+            <div class="main-book-container">
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+                <div class="main-book">
+                    <img src="assets/no-longer-human.jpg" alt="book 1">
+                    <p class="book-title">
+                        No Longer Human
+                    </p>
+                    <a class="button">See Details <span class="arrow">➤</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- Book showcase, book img same size -->
+
+
+    </main>
+    <!-- Main content -->
+
+    <!-- Footer with horizontal nav bar -->
+    <footer>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#copyright">Copyright</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="soc-med-icons">
+                <i class="ri-facebook-circle-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS Link-->
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

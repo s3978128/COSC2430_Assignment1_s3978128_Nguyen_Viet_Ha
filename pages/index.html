@@ -1,0 +1,606 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CozyVerse Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon Link-->
+    <link rel="icon" href="assets/bookstore-favicon.png" type="/png">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans&family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Boxicons Link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/boxicons.min.css">
+
+    <!--Remixicons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <!-- Main header -->
+
+    <header>
+        <!-- Header with logo image -->
+
+        <div class="logo">
+            <img src="../assets/bookstore-favicon.png" alt="Bookstore Logo">
+            <h1>
+                CozyVerse <span>Books</span>
+            </h1>
+        </div>
+
+        <!-- vertical menu (horizontal on desktop devices) -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="categ-1-fiction.html">Fiction</a>
+                </li>
+                <li>
+                    <a href="list.html">Nonfiction</a>
+                </li>
+                <li>
+                    <a href="list.html">Textbooks</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="h-right">
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-3-line"></i>
+            <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+        </div>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Landing homepage -->
+        <section class="hero">
+            <div class="hero__msg">
+                <p>
+                    Welcome!
+                </p>
+                <h1>
+                    CozyVerse Books.
+                </h1>
+                <div class="msg__content">
+                    <p>
+                        Welcome to CozyVerse Books, a serene haven where bookworms can wander through the pages of their favorite stories and immerse themselves in a world of comfort and elegance. Our carefully curated collection of books spans various genres, ensuring there's something delightful for every reader.
+                    </p>
+                    
+                    <a href="#showcase"  class="btn" id= "btn-hero">
+                        Start Browsing
+                    </a>
+                </div>
+            </div>
+            <div class="hero__illustration">
+                <img id="illust" src="../assets/home-illust.png" alt="Main illustration">
+            </div>
+
+        </section>
+
+        <!--Stats Showcase-->
+        <section class="stats">
+            <div class="stats__intro">
+                <div class="stats__illust">
+                    <img src="../assets/generic-illust-1.png" alt="Book and tea">
+                </div>
+                <h1 class="stats__intro-msg">
+                    CozyVerse Books is a one-of-a-kind bookstore that celebrates the mesmerizing allure of literary and the vastness of human knowledge.
+                </h1>
+            </div>
+
+            <div class="stats__content">
+                <div class="stats__item">
+                    <h3>
+                        10000+
+                    </h3>
+                    <img src="../assets/books.gif" alt="book icon">
+                    <p>
+                        Books
+                    </p>
+                </div>
+                <div class="stats__item">
+                    <h3>
+                        1000+
+                    </h3>
+                    <img src="../assets/feather-pen.gif" alt="author icon">
+                    <p>
+                        Authors
+                    </p>
+                </div>
+                <div class="stats__item">
+                    <h3>
+                        1000+
+                    </h3>
+                    <img src="../assets/publish.gif" alt="publisher icon">
+                    <p>
+                        Publishers
+                    </p>
+                </div>
+            </div>
+            <p>
+                * Stats are for illustration purposes only.
+            </p>
+
+        </section>
+
+        <!--Start browsing button leads here-->
+        <!--Showcase books from categories-->
+        <section id="showcase">
+            <div class="category">
+                <div class="category__title">
+                    <a href="">
+                        Fiction
+                    </a>
+                    <p>
+                        On Discount: Enjoy the timeless classics
+                    </p>
+                </div>
+
+                <div class="category__items">
+
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="category">
+                <!-- a category name as a link -->
+                <div class="category__title">
+                    <a href="">
+                        Nonfiction
+                    </a>
+                    <p>
+                        August Featured Nonfiction for the curious
+                    </p>
+                </div>
+
+                <!-- Book showcase -->
+                <div class="category__items">
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="category">
+                <!-- a category name as a link -->
+                <div class="category__title">
+                    <a href="">
+                        Textbooks
+                    </a>
+                    <p>
+                        New Arrivals! Textbooks on Psychology
+                    </p>
+                </div>
+
+                <!-- Book showcase -->
+                <div class="category__items">
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="../assets/no-longer-human.jpg" alt="book 1" class="book__img">
+
+                        <div class="book__data">
+                            <h1 class="book__title">
+                                No Longer Human
+                            </h1>
+    
+                            <span class="book__price">
+                                $10.99
+                                <span class="book__price--old">
+                                    $15.99
+                                    <span class="book__price--notice">
+                                        30% off
+                                    </span>
+                                </span>
+                            </span>
+    
+                            <p class="book__desc">
+                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro.
+                            </p>
+    
+                            <a href="../b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <!--Some feature photos-->
+        <section class="feature">
+            <div class="feature__msg">
+            <p>
+                Enjoy your visit to CozyVerse.
+            </p>
+            </div>
+            <div class="feature__content">
+            <div class="col col-1">
+                <div class="col__img">
+                    <img src="../assets/feature-1.jpg" alt="feature">
+                    <div class="col__desc">
+                        <p>
+                            Step into our enchanting world, where cozy corners and captivating tales await your arrival.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-2">
+                <div class="col__img">
+                    <img src="../assets/feature-2.jpg" alt="feature">
+                    <div class="col__desc">
+                        <p>
+                            Unwind in the gentle embrace of literature's timeless allure.
+                        </p>
+                    </div>
+                </div>
+                <div class="col__img">
+                    <img src="../assets/feature-3.jpg" alt="feature">
+                    <div class="col__desc">
+                        <p>
+                            Explore a universe of imagination and wonder.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section>
+
+        <!-- Rich Media Section -->
+        <section class="rich-media">
+            <div class="yt-video">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/JGJPVl7iQUM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--Newsletter Section-->
+        <section class="newsletter">
+            <div class="newsletter__illust">
+                <img src="../assets/book-stack.png" alt="Newsletter Image">
+            </div>
+            <div class="newletter__msg">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Receive updates, news, and special offers straight to your inbox!</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <a class="btn">Subscribe</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with horizontal nav bar -->
+    <footer>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#copyright">Copyright</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="soc-med-icons">
+                <i class="ri-facebook-circle-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS Link-->
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
