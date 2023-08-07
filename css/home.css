@@ -86,129 +86,6 @@ Homepage landing
 }
 
 /*--
-Book showcase
---*/
-
-#showcase {
-    padding: 2% 0;
-}
-
-.category {
-    display: flex;
-    flex-direction: column;
-    padding: 3% 5%;
-    margin: 5% 3%;
-    background-color: var(--cream-color);
-}
-
-.category__title {
-    align-self: flex-start;
-    font-weight: 600;
-}
-
-.category__title a {
-    text-decoration: none;
-    font-size: x-large;
-}
-
-.category__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.book {
-    width: 480px;
-    height: 280px;
-    background-color: var(--secondary-color);
-    border-radius: 5%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin: 2%;
-}
-
-.book__img {
-    position: absolute;
-    width: 150px;
-    margin-left: 2%;
-    filter: drop-shadow(3px 5px 1px rgba(31, 26, 61, 0.3))
-}
-
-.book__data {
-    transform: translateX(200px);
-    width: 60%;
-    height: 100%;
-    padding: 5%;
-}
-
-.book__title {
-    font-size: 1.3em;
-}
-
-.book__desc {
-    font-size: 0.9em;
-    font-weight: 500;
-}
-
-.book__price {
-    position: relative;
-    font-size: 1.2em;
-}
-
-.book__price--old {
-    position: relative;
-    text-decoration: line-through;
-    color: #999;
-    margin-left: 10px;
-}
-
-.book__price--notice {
-    position: absolute;
-    top: -5px;
-    left: 60px;
-    background-color: #ff6b6b;
-    color: var(--bg-color);
-    width: 200%;
-    padding: 2px 5px;
-    border-radius: 4px;
-}
-
-
-.price-btn {
-    display: block;
-    width: max-content;
-    border-radius: 5%;
-    transition: 0.3s;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    opacity: 0;
-}
-
-.price-btn:hover {
-    transform: none;
-}
-
-.book:hover .price-btn {
-    opacity: 1;
-}
-
-.book:hover .book__data {
-    background-color: var(--cream-color);
-}
-
-.book:hover .book__img {
-    transform: translateY(-40px);
-}
-
-.book__img,
-.book__data,
-.book__title,
-.book__desc {
-    transition: all 0.5s ease;
-}
-
-/*--
 Stats section
 --*/
 
@@ -288,7 +165,7 @@ Photos feature section
     margin: 2% 0;
 }
 
-.feature__msg p {
+.feature__msg h1 {
     text-align: center;
     margin-bottom: 5%;
     font-size: 1.5em;
@@ -352,12 +229,21 @@ Photos feature section
 Video section
 --*/
 
-.yt-video {
+.youtube{
+    margin-top: 8%;
+    background-color: var(--cream-color);
     display: flex;
+    padding: 5% 8%;
+    align-items:center;
     justify-content: center;
-    align-items: center;
-
+    flex-wrap: wrap;
 }
+
+.youtube__desc{
+    width: 50%;
+    padding: 0 5%;
+}
+
 
 /*--
 Newsletter section
@@ -393,8 +279,19 @@ Newsletter section
 .newsletter input[type="email"] {
     width: 50%;
     padding: 5px;
+    height: 3em;
     margin-right: 10px;
     font-family: 'Raleway', serif;
+}
+
+.newsletter .btn{
+    padding: 8px 15px;
+}
+
+.newsletter .btn:hover{
+    transform: none;
+    background-color: var(--shadow-color);
+    color: var(--bg-color);
 }
 
 /*--
