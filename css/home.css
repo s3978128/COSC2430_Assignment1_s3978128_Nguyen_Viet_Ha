@@ -2,11 +2,11 @@
 Homepage landing
 --*/
 
-.hero{
+.hero {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     justify-content: center;
-    align-items:  center;
+    align-items: center;
     column-gap: 3em;
     height: 100%;
     color: var(--text-color);
@@ -14,46 +14,46 @@ Homepage landing
     height: 100%;
     position: relative;
     padding: 10% 10% 3% 10%;
-    background: linear-gradient(150deg, rgba(35, 39, 114, 0.2), rgba(255, 255, 255, 0.2)), url('../assets/bg.jpg') no-repeat center center/cover;
+    background: url('../assets/bg.jpg') no-repeat center center/cover;
 }
 
 /*Text on left side*/
 
-.hero__msg{
+.hero__msg {
     animation: slideInLeft 0.55s ease-in-out;
     z-index: 4;
 }
 
 /*Small welcome text*/
 
-.hero__msg > p{
+.hero__msg>p {
     font-style: italic;
     margin: 0;
 }
 
-.hero__msg > p::before{
+.hero__msg>p::before {
     content: '-';
 }
 
 /*Large text block*/
-.msg__content{
+.msg__content {
     margin-left: 12%;
     width: 85%;
 }
 
-.hero__msg h1{
+.hero__msg h1 {
     font-size: 4em;
     width: 120%;
 }
 
-.hero__msg p{
+.hero__msg p {
     font-size: 1.1em;
     padding: 2%;
 }
 
 /*Start browsing button*/
 
-#btn-hero{
+#btn-hero {
     z-index: 1;
     border: 2px solid transparent;
     font-size: 1.2em;
@@ -61,25 +61,25 @@ Homepage landing
     padding: 12px 30px;
 }
 
-#btn-hero:hover{
+#btn-hero:hover {
     background-color: transparent;
     border: 2px solid var(--text-color);
     transform: translateX(8px);
 }
 
-#btn-hero a{
+#btn-hero a {
     font-weight: 800;
     color: var(--text-color);
 }
 
 /*Big illustration on right side*/
 
-.hero__illustration{
+.hero__illustration {
     z-index: 1;
     position: relative;
 }
 
-.hero__illustration img{
+.hero__illustration img {
     z-index: 3;
     position: relative;
     animation: slideInRight 1s ease-in-out;
@@ -89,7 +89,7 @@ Homepage landing
 Book showcase
 --*/
 
-#showcase{
+#showcase {
     padding: 2% 0;
 }
 
@@ -97,7 +97,7 @@ Book showcase
     display: flex;
     flex-direction: column;
     padding: 3% 5%;
-    margin: 3%;
+    margin: 5% 3%;
     background-color: var(--cream-color);
 }
 
@@ -117,7 +117,7 @@ Book showcase
     justify-content: space-evenly;
 }
 
-.book{
+.book {
     width: 480px;
     height: 280px;
     background-color: var(--secondary-color);
@@ -128,53 +128,54 @@ Book showcase
     margin: 2%;
 }
 
-.book__img{
+.book__img {
     position: absolute;
     width: 150px;
     margin-left: 2%;
     filter: drop-shadow(3px 5px 1px rgba(31, 26, 61, 0.3))
 }
 
-.book__data{
+.book__data {
     transform: translateX(200px);
     width: 60%;
     height: 100%;
     padding: 5%;
 }
 
-.book__title{
+.book__title {
     font-size: 1.3em;
 }
 
-.book__desc{
-    font-size: 0.8em;
+.book__desc {
+    font-size: 0.9em;
     font-weight: 500;
 }
 
 .book__price {
     position: relative;
+    font-size: 1.2em;
 }
-  
-  .book__price--old {
+
+.book__price--old {
     position: relative;
     text-decoration: line-through;
-    color: #999; 
-    margin-left: 10px; 
-  }
-  
-  .book__price--notice {
+    color: #999;
+    margin-left: 10px;
+}
+
+.book__price--notice {
     position: absolute;
     top: -5px;
-    left: 50px;
-    background-color: #ff6b6b; 
-    color: var(--bg-color); 
+    left: 60px;
+    background-color: #ff6b6b;
+    color: var(--bg-color);
     width: 200%;
     padding: 2px 5px;
     border-radius: 4px;
-  }
-  
+}
 
-.price-btn{
+
+.price-btn {
     display: block;
     width: max-content;
     border-radius: 5%;
@@ -184,26 +185,26 @@ Book showcase
     opacity: 0;
 }
 
-.price-btn:hover{
+.price-btn:hover {
     transform: none;
 }
 
-.book:hover .price-btn{
+.book:hover .price-btn {
     opacity: 1;
 }
 
-.book:hover .book__data{
+.book:hover .book__data {
     background-color: var(--cream-color);
 }
 
-.book:hover .book__img{
+.book:hover .book__img {
     transform: translateY(-40px);
 }
 
 .book__img,
 .book__data,
 .book__title,
-.book__desc{
+.book__desc {
     transition: all 0.5s ease;
 }
 
@@ -211,45 +212,43 @@ Book showcase
 Stats section
 --*/
 
-.stats{
+.stats {
     z-index: 1;
     position: relative;
     text-align: center;
 }
 
-.stats__intro{
+.stats__intro {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2% 25%;
 }
 
-.stats__illust{
+.stats__illust {
     width: 50%;
     margin: 0 5%;
 }
 
-.stats__illust img{
-    background-color: var(--cream-color);
-    border-radius: 100%;
+.stats__illust img {
     margin: 0 auto;
 }
 
-.stats__intro-msg{
+.stats__intro-msg {
     padding: 2%;
     font-size: 1.3em;
     font-weight: bold;
     font-family: 'Barlow', sans-serif;
 }
 
-.stats__content{
+.stats__content {
     padding: 0 200px;
     display: flex;
     justify-content: center;
-align-items: center;
+    align-items: center;
 }
 
-.stats__item{
+.stats__item {
     padding: 2% 1% 0 1%;
     margin: 0 10px;
     font-size: medium;
@@ -258,98 +257,94 @@ align-items: center;
     background-color: var(--cream-color);
     position: relative;
     max-width: 150px;
-    transition: 0.5s ease-in-out;
+    transition: 0.33s ease-in;
 }
 
-.stats__item:hover{
+.stats__item:hover {
     box-shadow: 0 0 10px rgb(42, 47, 79, 0.5);
     transform: translateY(-10px);
 }
 
-.stats__item h3{
+.stats__item h3 {
     font-size: 1.5em;
     margin: 5px;
 }
 
-.stats__item img{
+.stats__item img {
     width: 30%;
 }
 
-.stats > p{
+.stats>p {
     text-align: center;
     font-size: small;
-    font-style: italic;    
+    font-style: italic;
 }
 
 /*--
 Photos feature section
 --*/
 
-.feature{
-    margin: 2%;
+.feature {
+    margin: 2% 0;
 }
 
-.feature__msg p{
+.feature__msg p {
     text-align: center;
-    margin: 5% 0;
+    margin-bottom: 5%;
     font-size: 1.5em;
     font-weight: 600;
 }
 
-.feature__content{
+.feature__content {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     height: 300px;
     overflow: hidden;
-} 
+}
 
-.col{
+.col {
     margin: 0 2%;
 }
 
-.col-1{
+.col-1 {
     width: 450px;
 }
 
-.col-2{
+.col-2 {
     display: flex;
     flex-direction: column;
     width: 250px;
 }
 
-.col__img{
+.col__img {
     position: relative;
 }
 
 .col img,
-.col__desc p{
+.col__desc p {
     transition: all 0.3s ease-in-out;
 }
 
-.col__desc{
+.col__desc {
     position: absolute;
     top: 2%;
     left: -5%;
-    font-size: 0.8em;
-    background-color:rgba(245, 226, 226, 0.9);
-    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--bg-color);
     padding: 0 5%;
     line-height: 1.4em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.col__desc :hover{
-    color: black;
-}
-
-.col-1 .col__desc{
+.col-1 .col__desc {
     width: 20vw;
 }
 
-.col-2 .col__desc{
+.col-2 .col__desc {
     width: 15vw;
+    font-size: 0.8em;;
 }
 
 
@@ -385,7 +380,7 @@ Newsletter section
     margin-bottom: 5%;
 }
 
-.newsletter__illust{
+.newsletter__illust {
     margin: 0 30px;
     width: 25%;
 }
@@ -406,93 +401,92 @@ Newsletter section
 Media queries
 --*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .hero__msg > p{
+    .hero__msg>p {
         display: none;
     }
 
     .stats .container,
-    .stats h1{
+    .stats h1 {
         min-width: 25vw;
         font-size: 1em;
     }
 
-    .hero__msg h1{
+    .hero__msg h1 {
         font-size: 2em;
     }
 
     .hero__msg p,
-    .button a{
+    .button a {
         font-size: 0.8em;
     }
 
 }
 
-@media (max-width: 768px){
-    header{
+@media (max-width: 768px) {
+    header {
         padding: 0;
     }
 
-    .hero__msg > p{
+    .hero__msg>p {
         display: none;
     }
 
     .hero,
-    .msg__content
-    {
+    .msg__content {
         width: 100%;
         text-align: center;
-        margin: 0;   
+        margin: 0;
     }
 
-    .hero__msg h1{
+    .hero__msg h1 {
         width: 100%;
     }
 
-    #btn-hero{
+    #btn-hero {
         position: relative;
         width: 50%;
         margin: 2%;
     }
 
-    .hero .grid{
+    .hero .grid {
         grid-template-columns: none;
     }
 
-    #illustration img{
+    #illustration img {
         width: 70%;
     }
 
     .stats .container,
-    .stats h1{
+    .stats h1 {
         padding: 0 20%;
         font-size: 1em;
     }
 
-    .stats .content{
+    .stats .content {
         font-size: 1em;
         min-width: 25vw;
     }
 
-    .stats-illust img{
+    .stats-illust img {
         margin-top: 30%;
         width: 100%;
     }
 
-    .newsletter .details{
+    .newsletter .details {
         transform: scale(0.9);
     }
 
-    .newsletter .image{
+    .newsletter .image {
         width: 40%;
         padding: 2%;
         margin: 0;
     }
 
-    #btn-hero{
+    #btn-hero {
         border: none;
     }
 
-    #btn-hero:hover{
+    #btn-hero:hover {
         background-color: var(--primary-color);
         border: none;
         color: var(--text-color);

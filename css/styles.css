@@ -1,12 +1,12 @@
 /*Define variables for color palette: */
 
-:root{
+:root {
     --primary-color:#bebddb;
-    --secondary-color: #eab2b8;
-    --bg-color: #fdf0f0;
-    --text-color: #282738;
-    --cream-color: #f0dfdf;
-    --dark-color: #b93b76;
+    --secondary-color: rgb(184, 181, 207);
+    --bg-color: #fef0f0;
+    --text-color: rgb(35, 34, 42);
+    --cream-color: rgb(244, 229, 229);
+    --dark-color: rgb(242, 106, 149);
 }
 
 /*Reset default CSS, define normal behavior*/
@@ -18,44 +18,46 @@
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.75em;
     font-size: 14px;
     color: var(--text-color);
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--text-color);
 }
 
-h1, h2{
+h1,
+h2 {
     font-weight: bolder;
     line-height: 1.5em;
     margin: 10px 0;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h1{
+h1 {
     font-size: var(--h1-font);
 }
 
-h2{
+h2 {
     font-size: var(--h2-font);
 
 }
 
-p{
+p {
     margin: 10px 0;
 }
 
-img{
+img {
     width: 100%;
 }
 
@@ -70,34 +72,33 @@ img{
     padding: 10px 15px;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in;
 }
 
-.btn:hover{
+.btn:hover {
     transform: translateY(-5px);
 }
 
 /*Same CSS for header and footer navbar*/
 
 header,
-footer{
+footer {
     width: 100%;
     overflow: hidden;
     display: flex;
     transition: all 0.5s ease;
-    background: var(--text-color);
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
 }
 
-nav a{
+nav a {
     margin: 0 5px;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--dark-color);
     border-bottom: 2px var(--dark-color) solid;
 }
@@ -119,22 +120,27 @@ header {
     justify-content: space-between;
 }
 
-header.sticky{
-    background-color: rgba(21, 20, 45, 0.7);
+header.sticky {
+    background-color: rgba(37, 36, 66, 0.6);
     backdrop-filter: blur(35px);
 }
 
 header.sticky nav a,
 header.sticky .h-right i,
-header.sticky .logo h1{
+header.sticky .logo h1 {
     color: var(--bg-color);
 }
 
-header.sticky .logo span{
-    color: var(--secondary-color);
+header.sticky .logo span {
+    color: var(--dark-color);
 }
 
-.logo{
+header.sticky nav a:hover{
+    border-bottom: 2px var(--dark-color) solid;
+    color: var(--dark-color);
+}
+
+.logo {
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -142,47 +148,46 @@ header.sticky .logo span{
     cursor: pointer;
 }
 
-.logo img{
+.logo img {
     width: 35px;
     height: 35px;
 }
 
-.logo span{
+.logo span {
     color: var(--dark-color);
     text-transform: uppercase;
     font-size: 1.5em;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 1em;
     margin-left: 3%;
     font-weight: 800;
 }
 
 header nav a,
-.h-right i{
+.h-right i {
     display: block;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px;
     padding-bottom: 3px;
     border-bottom: 2px transparent solid;
     transition: 0.5s ease;
-    color: var(--text-color);
 }
 
-.h-right{
+.h-right {
     display: flex;
     margin: 0 5%;
 }
 
-.h-right i{
+.h-right i {
     font-size: var(--p-font);
     vertical-align: center;
 }
 
-.h-right i:hover{
+.h-right i:hover {
     color: var(--dark-color);
-    transform:translateY(-2px);
+    transform: translateY(-2px);
 }
 
 #menu-icon {
@@ -195,12 +200,13 @@ header nav a,
 }
 
 /*Footer navbar*/
-footer{
+footer {
     justify-content: center;
     align-items: center;
+    background-color: rgba(21, 20, 45, 0.8);
 }
 
-footer nav{
+footer nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -210,105 +216,136 @@ footer nav{
     margin: 3% 0;
 }
 
-footer nav a{
+footer nav a {
     color: white;
     transition: all 0.5s ease;
     padding: 10px;
     padding-bottom: 6px;
-    border-bottom: 2px transparent solid;
 }
 
-.soc-med-icons{
+.soc-med-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.soc-med-icons i{
-    font-size: xx-large;
+.soc-med-icons i {
+    font-size: x-large;
     font-weight: 500;
     color: white;
     transition: all 0.5s ease;
     padding: 10px;
-    padding-bottom: 6px;
- }
+    padding-bottom: 20px;
+}
 
-.soc-med-icons i:hover{
+.soc-med-icons i:hover {
     transform: translateY(-5px);
+}
+
+.soc-med-icons i:hover,
+footer nav a:hover {
     border-bottom: none;
+    color: var(--dark-color);
+}
+
+/*Banner for category, book, contact pages*/
+
+.banner {
+    position: relative;
+    margin: 0 auto;
+    height: 50vh;
+    background: linear-gradient(to top, #3734349a 10%, #ffffffb6 100%), url('../assets/feature-1.jpg') no-repeat center center/cover;
+}
+
+
+.banner__content {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 1% 8%;
+}
+
+.banner__title {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 /*Keyframes for animations*/
-@keyframes slideInLeft{
-    0%{
+@keyframes slideInLeft {
+    0% {
         transform: translateX(-100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
 
-@keyframes slideInRight{
-    0%{
+@keyframes slideInRight {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
 
-@keyframes slideInBottom{
-    0%{
+@keyframes slideInBottom {
+    0% {
         transform: translateY(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
 
 /*Media queries*/
-@media only screen and (min-width: 768px) and (max-width: 992px){
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .category {
         max-width: 100%;
         padding-left: 0;
         padding-top: 0;
     }
 
-    .btn{
+    .btn {
         font-size: small;
     }
 
-    .navbar{
+    .navbar {
         padding: 3%;
     }
 
-    .logo{
+    .logo {
         width: 40%;
     }
 
-    .navbar a:hover{
+    .navbar a:hover {
         border-bottom: none;
     }
 
 }
 
-@media (max-width: 768px){
-    .btn{
+@media (max-width: 768px) {
+    .btn {
         font-size: small;
     }
 
-    .btn:hover .ri-arrow-right-s-line{
+    .btn:hover .ri-arrow-right-s-line {
         display: none;
     }
-    
+
     .category {
         max-width: 100%;
         padding-left: 0;
         padding-top: 0;
     }
 
-    header .navbar{
+    header .navbar {
         padding: 10px;
         flex-direction: column;
         justify-items: center;
@@ -317,21 +354,21 @@ footer nav a{
         animation: slideInBottom 1s ease-in;
     }
 
-    #nav-list{
+    #nav-list {
         text-align: center;
         display: none;
     }
 
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
 
-    .logo{
+    .logo {
         width: 60%;
         margin-bottom: 8%;
     }
 
-    .navbar a:hover{
+    .navbar a:hover {
         border-bottom: transparent;
     }
 
@@ -350,13 +387,12 @@ footer nav a{
     }
 
     footer .navbar a,
-    #social-media-icons i
-     {
+    #social-media-icons i {
         font-size: 0.8em;
     }
 
     #social-media-icons,
-    #footer-nav{
+    #footer-nav {
         width: 100%;
     }
 
