@@ -1,5 +1,5 @@
 .breadcrumb {
-  margin-top: 20px;
+  margin-top: 100px;
   display: flex;
   list-style: none;
   padding: 10px;
@@ -68,7 +68,7 @@
   justify-content: flex-start;
 }
 
-#cart-button {
+.cart-btn {
   display: inline-block;
   width: 30%;
   border: none;
@@ -76,14 +76,13 @@
   padding: 12px;
   font-size: medium;
   font-weight: bold;
-  background-color: #FF6384;
-  color: #fff;
+  background-color: var(--light-color);
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-#cart-button:hover {
-  background-color: #E64166;
+.cart-btn:hover {
+  background-color: var(--dark-color);
+  color: var(--bg-color);
 }
 
 .book-details .book-desc{
@@ -116,7 +115,7 @@ p {
     width: 300px;
   }
 
-  #cart-button {
+  .cart-btn {
     padding: 10px;
     font-size: smaller;
   }

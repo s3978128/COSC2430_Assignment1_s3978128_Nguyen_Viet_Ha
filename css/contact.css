@@ -66,9 +66,8 @@ fieldset {
 }
 
 .btn-submit{
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     text-transform: uppercase;
-    color: white;
     padding: 12px 30px;
     font-weight: 600;
 }
@@ -80,7 +79,8 @@ fieldset {
 
 .btn-submit:hover{
     transform: none;
-    background-color: rgb(203, 54, 87);
+    background-color: var(--dark-color);
+    color: white;
 }
 
 @media screen and (max-width: 768px) {

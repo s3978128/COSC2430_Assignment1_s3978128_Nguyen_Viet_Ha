@@ -3,11 +3,12 @@
 :root {
     --primary-color:rgb(190, 189, 219);
     --secondary-color: rgb(190, 197, 207);
-    --shadow-color: rgba(35, 35, 68, 0.8);
+    --shadow-color: rgba(73, 73, 99, 0.8);
     --bg-color: rgb(250, 245, 245);
     --text-color: rgb(18, 18, 19);
     --cream-color: rgb(239, 230, 230);
-    --dark-color: rgb(242, 106, 149);
+    --light-color: rgb(241, 114, 118);
+    --dark-color: rgb(207, 44, 44);
 }
 
 ::-webkit-scrollbar {
@@ -79,7 +80,7 @@ img {
     padding: 10px 15px;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -128,7 +129,7 @@ header {
 }
 
 header.sticky {
-    background-color: rgba(37, 36, 66, 0.6);
+    background-color: var(--shadow-color);
     backdrop-filter: blur(35px);
 }
 
@@ -337,7 +338,7 @@ Book showcase cards (used in homepage and category page)
 footer {
     justify-content: center;
     align-items: center;
-    background-color: rgba(21, 20, 45, 0.8);
+    background-color: var(--shadow-color);
 }
 
 footer nav {
@@ -351,7 +352,7 @@ footer nav {
 }
 
 footer nav a {
-    color: white;
+    color: var(--bg-color);
     transition: all 0.5s ease;
     padding: 10px;
     padding-bottom: 6px;
