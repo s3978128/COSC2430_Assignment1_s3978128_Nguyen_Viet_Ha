@@ -1,6 +1,7 @@
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
+    /* make scrollbar transparent */
 }
 
 .container {
@@ -9,11 +10,11 @@
     scroll-snap-type: x mandatory;
     width: 50%;
     margin: 5% auto;
-  }
-  
-  .title {
+}
+
+.title {
     width: 180px;
     margin-right: 5px;
     flex-shrink: 0;
     scroll-snap-align: start;
-  }
+}
