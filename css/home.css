@@ -14,7 +14,7 @@ Homepage landing
     height: 100%;
     position: relative;
     padding: 10% 10% 3% 10%;
-    background: url('../assets/bg.jpg') no-repeat center center/cover;
+    background: url('/images/bg.jpg') no-repeat center center/cover;
 }
 
 /*Text on left side*/

@@ -2,12 +2,13 @@
 
 :root {
     --primary-color:#bebddb;
-    --secondary-color: rgb(184, 181, 207);
+    --secondary-color: rgb(183, 181, 203);
     --bg-color: #fef0f0;
     --text-color: rgb(35, 34, 42);
     --cream-color: rgb(244, 229, 229);
     --dark-color: rgb(242, 106, 149);
 }
+
 
 /*Reset default CSS, define normal behavior*/
 
@@ -255,7 +256,7 @@ footer nav a:hover {
     position: relative;
     margin: 0 auto;
     height: 50vh;
-    background: linear-gradient(to top, #3734349a 10%, #ffffffb6 100%), url('../assets/feature-1.jpg') no-repeat center center/cover;
+    background: linear-gradient(to top, #3734349a 10%, #ffffffb6 100%), url('../images/feature-1.jpg') no-repeat center center/cover;
 }
 
 
