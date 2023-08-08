@@ -26,12 +26,12 @@ Homepage landing
 
 /*Small welcome text*/
 
-.hero__msg > p {
+.hero__msg>p {
     font-style: italic;
     margin: 0;
 }
 
-.hero__msg > p::before {
+.hero__msg>p::before {
     content: '⁠—';
 }
 
@@ -212,7 +212,7 @@ Photos feature section
 
 .col-2 .col__desc {
     width: 15vw;
-    font-size: 0.8em;;
+    font-size: 0.8em;
 }
 
 
@@ -220,17 +220,17 @@ Photos feature section
 Video section
 --*/
 
-.youtube{
+.youtube {
     margin-top: 8%;
     background-color: var(--cream-color);
     display: flex;
     padding: 5% 8%;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.youtube__desc{
+.youtube__desc {
     width: 50%;
     padding: 0 5%;
 }
@@ -270,11 +270,11 @@ Newsletter section
     font-family: 'Raleway', serif;
 }
 
-.newsletter .btn{
+.newsletter .btn {
     padding: 8px 15px;
 }
 
-.newsletter .btn:hover{
+.newsletter .btn:hover {
     transform: none;
     background-color: var(--shadow-color);
     color: var(--bg-color);
@@ -284,190 +284,371 @@ Newsletter section
 Media queries
 --*/
 
-@media only screen and (min-width: 450px) and (max-width: 650px) {
-    .hero{
+@media only screen and (min-width: 320px) and (max-width: 530px) {
+    .hero {
         grid-template-columns: none;
         gap: 0;
+        padding: 25% 3% 10% 3%;
     }
 
     .hero__msg,
+    .hero__illustration {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__msg{
+        background-color: rgba(239, 230, 230, 0.9);
+        padding: 5%;
+    }
+
     .hero__illustration{
-        width: 100%;
-        text-align: center;
+        width: 70%;
+        margin: 10% auto 0 auto;
     }
-    
+
     .hero__msg h1 {
-        font-size: 3em; 
-        line-height: 1em;
+        font-size: 3em;
+        line-height: 1.4em;
         width: 100%;
     }
 
-    .msg__content{
-        margin-left: 20px;
-        width: 90%;
+    .msg__content {
+        margin-left: 0px;
+        width: 100%;
     }
 
-    .msg__content p{
-        font-size: 0.9em;
-        line-height: 1.5em;
+    .hero__msg > p::before {
+        content: '';
     }
 
-    .btn-hero{
+    .msg__content p {
         font-size: 1em;
-        padding: 2% 3%;
+        line-height: 1.6em;
     }
 
-    .stats{
-        margin-top: 8%;
+    .btn-hero {
+        font-size: 1.5em;
+        padding: 3% 8%;
+        border: 1px solid var(--shadow-color);
     }
 
-    .stats__intro{
-        padding: 2% 20%;
+    .stats__intro {
+        flex-direction: column;
     }
 
-    .stats__content{
-        padding: 0 120px;
-        margin: 2% 0;
+    .stats__intro-msg{
+        font-size: 1em;
     }
 
-    .stats > p{
+    .stats__illust{
+        width: 80%;
+    }
+
+    .stats__content {
+        padding: 0 2px;
+        margin: 0;
+    }
+
+    .stats__item{
+        padding: 0;
+        margin: 2%;
+    }
+
+    .stats>p {
         font-size: 0.9em;
     }
 
-    .youtube__desc{
-        text-align: center;
+    .youtube__vid {
+        position: relative;
         width: 100%;
-        margin-top: 2%;
+        padding-bottom: 56.25%;
+        overflow: hidden;
     }
     
-    .feature__content{
+    .youtube__vid iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100%;
-        overflow: visible;
-    }
-    
-}
-
-@media only screen and (min-width: 650px) and (max-width: 800px) {
-    .hero{
-        padding: 15% 3% 0 5%;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 3em;
-    }
-    
-    .hero__msg h1 {
-        font-size: 3.5em; 
-        line-height: 1em;
     }
 
-    .msg__content{
-        margin-left: 20px;
-        width: 90%;
-    }
-
-    .msg__content p{
-        font-size: 1em;
-        line-height: 1.5em;
-    }
-
-    .btn-hero{
-        font-size: 1em;
-        padding: 2% 3%;
-    }
-
-    .stats{
-        margin-top: 8%;
-    }
-
-    .stats__intro{
-        padding: 2% 20%;
-    }
-
-    .stats__content{
-        padding: 0 120px;
-        margin: 2% 0;
-    }
-
-    .stats > p{
-        font-size: 0.9em;
-    }
-
-    .youtube__desc{
+    .youtube__desc {
+        font-size: 0.8em;
+        line-height: 1.7em;
         text-align: center;
         width: 100%;
         margin-top: 2%;
     }
 
     .feature__content {
-        height: 220px;
+        height: 100%;
     }
-    
-    .col-1 {
-        width: 350px;
-    }
-    
+
+    .col-1,
     .col-2 {
-        width: 160px;
+        width: 200px;
     }
-    
+
     .col__img {
         position: relative;
+        padding: 5%;
+    }
+    
+    .col__desc {
+        top: 10px;
+    }
+    
+    .col-1 .col__desc,
+    .col-2 .col__desc {
+        width: 50vw;
+        font-size: 0.7em;
+    }
+
+    .newsletter{
+        flex-direction: column;
+    }
+
+    .newsletter__illust{
+        width: 30%;
+    }
+
+    .newletter__msg{
+        line-height: 1.7em;
+        text-align: center;
+    }
+
+    .newsletter form{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 650px) {
+    .hero {
+        grid-template-columns: none;
+        gap: 0;
+        padding: 20% 3% 10% 3%;
+    }
+
+    .hero__msg,
+    .hero__illustration {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__msg{
+        background-color: rgba(239, 230, 230, 0.9);
+    }
+
+    .hero__illustration{
+        width: 70%;
+        margin: 10% auto 0 auto;
+    }
+
+    .hero__msg h1 {
+        font-size: 3em;
+        line-height: 1em;
+        width: 100%;
+    }
+
+    .msg__content {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .hero__msg > p::before {
+        content: '';
+    }
+
+    .hero__msg h1 {
+        font-size: 4em;
+    }
+
+    .msg__content p {
+        font-size: 1.4em;
+        line-height: 1.6em;
+    }
+
+    .btn-hero {
+        font-size: 1.5em;
+        padding: 3% 8%;
+        border: 2px solid var(--shadow-color);
+    }
+
+    .stats__intro {
+        flex-direction: column;
+    }
+
+    .stats__content {
+        padding: 0 20px;
+        margin: 2% 0;
+    }
+
+    .stats>p {
+        font-size: 0.9em;
+    }
+
+    .youtube__desc {
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .feature__content {
+        height: 100%;
+    }
+
+    .col-1,
+    .col-2 {
+        width: 350px;
+    }
+
+    .col__img {
+        position: relative;
+        padding: 5%;
+    }
+    
+    .col__desc {
+        top: 20px;
+    }
+    
+    .col-1 .col__desc,
+    .col-2 .col__desc {
+        width: 35vw;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+    .hero {
+        padding: 15% 3% 0 5%;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 3em;
+    }
+
+    .hero__msg h1 {
+        font-size: 3.5em;
+        line-height: 1em;
+    }
+
+    .msg__content {
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .msg__content p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .btn-hero {
+        font-size: 1em;
+        padding: 2% 3%;
+    }
+
+    .stats {
+        margin-top: 8%;
+    }
+
+    .stats__intro {
+        padding: 2% 20%;
+    }
+
+    .stats__content {
+        padding: 0 120px;
+        margin: 2% 0;
+    }
+
+    .stats>p {
+        font-size: 0.9em;
+    }
+
+    .youtube__desc {
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .feature__content {
+        height: 100%;
+    }
+
+    .col-1,
+    .col-2 {
+        width: 350px;
+    }
+
+    .col__img {
+        position: relative;
+        padding: 5%;
+    }
+    
+    .col__desc {
+        top: 20px;
+    }
+    
+    .col-1 .col__desc,
+    .col-2 .col__desc {
+        width: 35vw;
+        font-size: 1em;
     }
 
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
-    .hero{
+    .hero {
         padding: 15% 8% 0 8%;
         grid-template-columns: 1.2fr 1fr;
     }
-    
+
     .hero__msg h1 {
-        font-size: 3.2em; 
+        font-size: 3.2em;
         line-height: 1em;
     }
 
-    .msg__content{
+    .msg__content {
         margin-left: 20px;
         width: 90%;
     }
 
-    .msg__content p{
+    .msg__content p {
         font-size: 0.9em;
         line-height: 1.6em;
     }
 
-    .btn-hero{
+    .btn-hero {
         font-size: 1em;
         padding: 2% 3%;
     }
 
-    .stats{
+    .stats {
         margin-top: 8%;
     }
 
-    .stats > p{
+    .stats>p {
         font-size: 0.9em;
     }
 
-    .youtube__desc{
+    .youtube__desc {
         text-align: center;
         width: 100%;
         margin-top: 2%;
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
 
-    .hero{
+    .hero {
         padding: 15% 10% 0 10%;
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .hero__msg h1 {
-        font-size: 4em; 
+        font-size: 4em;
     }
 
-    .msg__content{
+    .msg__content {
         margin-left: 15px;
         width: 100%;
     }
