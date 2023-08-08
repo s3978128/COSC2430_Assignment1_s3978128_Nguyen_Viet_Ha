@@ -1,20 +1,24 @@
 /*Define variables for color palette: */
 
 :root {
-    --primary-color:rgb(190, 189, 219);
+    --primary-color: rgb(190, 189, 219);
     --secondary-color: rgb(190, 197, 207);
-    --shadow-color: rgba(73, 73, 99, 0.8);
+    --shadow-color: rgba(17, 17, 38, 0.8);
     --bg-color: rgb(250, 245, 245);
     --text-color: rgb(18, 18, 19);
     --cream-color: rgb(239, 230, 230);
-    --light-color: rgb(241, 114, 118);
+    --light-color: rgb(250, 136, 136);
     --dark-color: rgb(207, 44, 44);
+
+    --h1-font: 2.5em;
+    --h2-font: 1.5em;
+    --p-font: 0.9em;
 }
 
+/* make scrollbar transparent */
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
-    /* make scrollbar transparent */
 }
 
 /*Reset default CSS, define normal behavior*/
@@ -29,7 +33,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.75em;
-    font-size: 14px;
+    font-size: var(--p-font);
     color: var(--text-color);
     background-color: var(--bg-color);
     overflow-x: hidden;
@@ -76,15 +80,11 @@ img {
     background: var(--primary-color);
     color: var(--text-color);
     font-weight: 600;
-    font-size: small;
-    padding: 10px 15px;
+    padding: 15px;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 5px;
     transition: 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-5px);
 }
 
 /*Same CSS for header and footer navbar*/
@@ -97,18 +97,13 @@ footer {
     transition: all 0.5s ease;
 }
 
-nav ul {
+.navbar ul {
     display: flex;
     align-items: center;
 }
 
-nav a {
+.navbar a {
     margin: 0 5px;
-}
-
-nav a:hover {
-    color: var(--dark-color);
-    border-bottom: 2px var(--dark-color) solid;
 }
 
 /*Header logo and navbar*/
@@ -126,26 +121,6 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-header.sticky {
-    background-color: var(--shadow-color);
-    backdrop-filter: blur(35px);
-}
-
-header.sticky nav a,
-header.sticky .h-right i,
-header.sticky .logo h1 {
-    color: var(--bg-color);
-}
-
-header.sticky .logo span {
-    color: var(--dark-color);
-}
-
-header.sticky nav a:hover{
-    border-bottom: 2px var(--dark-color) solid;
-    color: var(--dark-color);
 }
 
 .logo {
@@ -168,9 +143,16 @@ header.sticky nav a:hover{
 }
 
 .logo h1 {
-    font-size: 1em;
     margin-left: 3%;
     font-weight: 800;
+    font-size: var(--p-font);
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav a,
@@ -180,7 +162,7 @@ header nav a,
     padding: 10px;
     padding-bottom: 3px;
     border-bottom: 2px transparent solid;
-    transition: 0.5s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .h-right {
@@ -189,22 +171,42 @@ header nav a,
 }
 
 .h-right i {
-    font-size: var(--p-font);
     vertical-align: center;
 }
 
 .h-right i:hover {
-    color: var(--dark-color);
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+    color: var(--light-color);
 }
 
-#menu-icon {
-    color: var(--text-color);
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 101;
-    padding: 8px;
-    display: none;
+/*--Sticky header--*/
+header.sticky {
+    background-color: var(--shadow-color);
+    backdrop-filter: blur(35px);
+}
+
+header.sticky nav a,
+header.sticky .h-right i,
+header.sticky .logo h1 {
+    color: var(--bg-color);
+}
+
+header.sticky .logo span {
+    color: var(--light-color);
+}
+
+header.sticky nav a:hover {
+    border-bottom: 2px var(--light-color) solid;
+    color: var(--light-color);
+}
+
+header.sticky .h-right i:hover {
+    color: var(--light-color);
+}
+
+header.sticky .h-right i,
+header.sticky nav a {
+    font-weight: 500;
 }
 
 /*--
@@ -223,19 +225,35 @@ Book showcase cards (used in homepage and category page)
     background-color: var(--cream-color);
 }
 
-.category:last-child{
+.category:last-child {
     margin-bottom: 0;
 }
 
 .category__title {
     align-self: flex-start;
     font-weight: 600;
+    padding: 5px;
 }
 
-.category__title h1,
-.category__title a{
+.category__title a {
     text-decoration: none;
-    font-size: x-large;
+    font-size: var(--h1-font);
+    background: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.category__title a:hover {
+    background-color: var(--light-color);
+    transform: translateX(3px);
+}
+
+.category__title p {
+    font-size: var(--p-font);
+    color: var(--dark-color);
+    font-style: italic;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .category__items {
@@ -251,13 +269,13 @@ Book showcase cards (used in homepage and category page)
     border-radius: 8px;
     display: flex;
     align-items: center;
-    overflow: hidden;
     margin: 2%;
+    position: relative;
 }
 
 .book__img {
     position: absolute;
-    width: 150px;
+    width: 165px;
     margin-left: 2%;
     filter: drop-shadow(3px 5px 1px rgba(31, 26, 61, 0.3))
 }
@@ -274,9 +292,10 @@ Book showcase cards (used in homepage and category page)
 }
 
 .book__desc {
-    font-size: 0.9em;
+    font-size: var(--p-font);
     font-weight: 500;
-}  
+    line-height: 1.8em;
+}
 
 .book__price {
     position: relative;
@@ -309,6 +328,7 @@ Book showcase cards (used in homepage and category page)
     background-color: var(--secondary-color);
     color: var(--text-color);
     opacity: 0;
+    padding: 3% 5%;
 }
 
 .price-btn:hover {
@@ -324,7 +344,7 @@ Book showcase cards (used in homepage and category page)
 }
 
 .book:hover .book__img {
-    transform: translateY(-40px);
+    transform: translateY(-35px);
 }
 
 .book__img,
@@ -346,7 +366,6 @@ footer nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: medium;
     border-bottom: 2px transparent solid;
     margin: 3% 0;
 }
@@ -366,8 +385,7 @@ footer nav a {
 }
 
 .soc-med-icons i {
-    font-size: x-large;
-    font-weight: 500;
+    font-size: 2em;
     color: white;
     transition: all 0.5s ease;
     padding: 10px;
@@ -381,7 +399,7 @@ footer nav a {
 .soc-med-icons i:hover,
 footer nav a:hover {
     border-bottom: none;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 /*Banner for category, book, contact pages*/
@@ -393,20 +411,38 @@ footer nav a:hover {
     background: linear-gradient(to top, #3734349a 10%, #ffffffb6 100%), url('../images/feature-1.jpg') no-repeat center center/cover;
 }
 
-
 .banner__content {
     position: absolute;
     bottom: 0;
-    color: white;
+    color: var(--bg-color);
     width: 100%;
     padding: 1% 8%;
 }
 
 .banner__title {
-    font-size: 3em;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+/*Menu icons*/
+
+.h-right #menu-icon {
+    display: none;
+}
+
+.h-right #close-icon {
+    display: none;
+    color: var(--bg-color);
+}
+
+.h-right #menu-icon,
+.h-right #close-icon {
+    font-size: 3em;
+    position: absolute;
+    right: 3%;
+    top: 8px;
+}
+
 
 /*Keyframes for animations*/
 @keyframes slideInLeft {
@@ -440,95 +476,297 @@ footer nav a:hover {
 }
 
 /*Media queries*/
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    .category {
-        max-width: 100%;
-        padding-left: 0;
-        padding-top: 0;
+
+@media only screen and (min-width: 450px) and (max-width: 650px) {
+    :root {
+        --h1-font: 1.8em;
+        --h2-font: 1.1em;
+        --p-font: 0.7em;
+    }
+    
+    /*Show hamburger menu*/
+
+    .h-right #menu-icon{
+        display: block;
     }
 
-    .btn {
-        font-size: small;
+    .h-right #close-icon{
+        display: none;
     }
 
-    .navbar {
-        padding: 3%;
+    header .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--shadow-color);
+        transition: all 0.5s ease;
+        padding: 0;
     }
 
-    .logo {
-        width: 40%;
+    header .navbar a{
+        margin-bottom: 40px;
+        font-size: 2rem;
+        color: var(--bg-color);
+        font-weight: 500;
     }
 
-    .navbar a:hover {
+    header .navbar a:hover,
+    header .h-right i:hover{
         border-bottom: none;
+        color: var(--text-color);
+        transform: none;
+    }
+
+    /*Show close icon when menu clicked*/
+
+    header .navbar .open{
+        left: 0;
+    }
+
+    #menu-icon.active{
+        display: none;
+    }
+
+    #close-icon.active{
+        display: block;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header nav a,
+    .h-right i {
+        padding: 0px;
+    }
+
+    .logo h1 {
+        font-size: var(--h2-font);
+    }
+
+    .category__title>p {
+        font-size: var(--h2-font);
+    }
+
+
+
+    .book {
+        width: 450px;
+    }
+
+    .book__img {
+        width: 150px;
+        left: 10px;
+    }
+
+    .book__data{
+        width: 60%;
+        transform: translateX(190px);
+        padding: 5%;
+    }
+
+    .book__title {
+        font-size: var(--h1-font);
+    }
+
+    .book__desc {
+        font-size: var(--h2-font);
+        margin-bottom: 15px;
+    }
+
+    .price-btn {
+        padding: 5% 8%;
+        font-size: var(--h2-font);
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+    :root {
+        --h1-font: 1.8em;
+        --h2-font: 1em;
+        --p-font: 0.7em;
+    }
+
+    /*Show hamburger menu*/
+
+    .h-right #menu-icon{
+        display: block;
+    }
+
+    .h-right #close-icon{
+        display: none;
+    }
+
+    header .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--shadow-color);
+        transition: all 0.5s ease;
+        padding: 70px 20px;
+    }
+
+    header .navbar a{
+        margin-bottom: 40px;
+        font-size: 2rem;
+        color: var(--bg-color);
+        font-weight: 500;
+    }
+
+    header .navbar a:hover,
+    header .h-right i:hover{
+        border-bottom: none;
+        color: var(--text-color);
+        transform: none;
+    }
+
+    /*Show close icon when menu clicked*/
+
+    header .navbar .open{
+        left: 0;
+    }
+
+    #menu-icon.active{
+        display: none;
+    }
+
+    #close-icon.active{
+        display: block;
+    }
+    
+
+    header {
+        padding: 1% 2% 1% 7%;
+        overflow: visible;
+    }
+
+    .h-right{
+        margin-right: 10%;
+    }
+
+    .h-right i {
+        font-size: 1.5em;;
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: var(--h2-font);
+    }
+
+    .category__title>p {
+        font-size: var(--h2-font);
+    }
+
+    .book {
+        width: 500px;
+    }
+
+    .book__img {
+        width: 160px;
+        left: 10px;
+    }
+
+    .book__title {
+        font-size: var(--h1-font);
+    }
+
+    .book__desc {
+        font-size: var(--h2-font);
+        margin-bottom: 15px;
+    }
+
+    .price-btn {
+        padding: 5% 8%;
+        font-size: var(--h2-font);
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    :root {
+        --h1-font: 2em;
+        --h2-font: 1em;
+        --p-font: 0.9em;
+    }
+
+    header {
+        padding: 1% 3% 1% 8%;
+    }
+
+    header nav a,
+    .h-right i {
+        padding: 5px;
+    }
+
+    header .navbar {
+        margin-left: 50px;
+    }
+
+    .logo h1 {
+        font-size: var(--h2-font);
+    }
+
+    .book {
+        width: 500px;
+    }
+
+    .book__img {
+        width: 160px;
+        left: 10px;
     }
 
 }
 
-@media (max-width: 768px) {
-    .btn {
-        font-size: small;
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+    :root {
+        --h1-font: 2.5em;
+        --h2-font: 1.3em;
+        --p-font: 0.88em;
     }
 
-    .btn:hover .ri-arrow-right-s-line {
-        display: none;
+    header {
+        padding: 0 5% 0 10%;
     }
 
-    .category {
-        max-width: 100%;
-        padding-left: 0;
-        padding-top: 0;
+    .logo h1 {
+        font-size: var(--h2-font);
     }
 
-    header .navbar {
-        padding: 10px;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        font-size: small;
-        animation: slideInBottom 1s ease-in;
+    .book {
+        width: 380px;
     }
 
-    #nav-list {
-        text-align: center;
-        display: none;
+    .book__img {
+        width: 120px;
+        left: 5px;
     }
 
-    #menu-icon {
-        display: block;
+    .book__data {
+        width: 65%;
+        transform: translateX(150px);
+        padding: 5%;
     }
 
-    .logo {
-        width: 60%;
-        margin-bottom: 8%;
+    .book__price--notice {
+        width: 140%;
     }
 
-    .navbar a:hover {
-        border-bottom: transparent;
+    .price-btn {
+        padding: 5%;
     }
-
-    header .navbar ul {
-        padding: 0 3rem;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 5%;
-    }
-
-    .btn {
-        font-size: smaller;
-        padding: 10px;
-    }
-
-    footer .navbar a,
-    #social-media-icons i {
-        font-size: 0.8em;
-    }
-
-    #social-media-icons,
-    #footer-nav {
-        width: 100%;
-    }
-
 }

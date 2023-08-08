@@ -14,7 +14,7 @@ Homepage landing
     height: 100%;
     position: relative;
     padding: 10% 10% 3% 10%;
-    background: url('/images/bg.png') no-repeat center center/cover;
+    background: url(../images/bg.png) no-repeat center center/cover;
 }
 
 /*Text on left side*/
@@ -26,13 +26,13 @@ Homepage landing
 
 /*Small welcome text*/
 
-.hero__msg>p {
+.hero__msg > p {
     font-style: italic;
     margin: 0;
 }
 
-.hero__msg>p::before {
-    content: '-';
+.hero__msg > p::before {
+    content: '⁠—';
 }
 
 /*Large text block*/
@@ -42,7 +42,7 @@ Homepage landing
 }
 
 .hero__msg h1 {
-    font-size: 5em;
+    font-size: 4.5em;
     width: 120%;
 }
 
@@ -53,7 +53,7 @@ Homepage landing
 
 /*Start browsing button*/
 
-#btn-hero {
+.btn-hero {
     z-index: 1;
     border: 2px solid transparent;
     font-size: 1.2em;
@@ -61,27 +61,20 @@ Homepage landing
     padding: 12px 30px;
 }
 
-#btn-hero:hover {
+.btn-hero:hover {
     background-color: transparent;
     border: 2px solid var(--text-color);
     transform: translateX(8px);
 }
 
-#btn-hero a {
+.btn-hero a {
     font-weight: 800;
     color: var(--text-color);
 }
 
 /*Big illustration on right side*/
 
-.hero__illustration {
-    z-index: 1;
-    position: relative;
-}
-
 .hero__illustration img {
-    z-index: 3;
-    position: relative;
     animation: slideInRight 1s ease-in-out;
 }
 
@@ -90,7 +83,7 @@ Stats section
 --*/
 
 .stats {
-    z-index: 1;
+    margin-top: 3%;
     position: relative;
     text-align: center;
 }
@@ -113,7 +106,7 @@ Stats section
 
 .stats__intro-msg {
     padding: 2%;
-    font-size: 1.3em;
+    font-size: var(--h2-font);
     font-weight: bold;
     font-family: 'Barlow', sans-serif;
 }
@@ -126,15 +119,14 @@ Stats section
 }
 
 .stats__item {
-    padding: 2% 1% 0 1%;
+    padding: 1%;
     margin: 0 10px;
-    font-size: medium;
     border-radius: 10px;
-    transition: 0.2s ease-in;
     background-color: var(--cream-color);
     position: relative;
     max-width: 150px;
-    transition: 0.33s ease-in;
+    transition: 0.3s ease;
+    font-size: 1.2em;
 }
 
 .stats__item:hover {
@@ -143,7 +135,6 @@ Stats section
 }
 
 .stats__item h3 {
-    font-size: 1.5em;
     margin: 5px;
 }
 
@@ -167,8 +158,8 @@ Photos feature section
 
 .feature__msg h1 {
     text-align: center;
-    margin-bottom: 5%;
-    font-size: 1.5em;
+    margin: 5% 0 2% 0;
+    font-size: var(--h1-font);
     font-weight: 600;
 }
 
@@ -257,12 +248,7 @@ Newsletter section
     padding: 0 5%;
 }
 
-.newsletter h2 {
-    font-size: 1.5em;
-}
-
 .newsletter p {
-    font-size: 1em;
     margin-bottom: 5%;
 }
 
@@ -297,96 +283,192 @@ Newsletter section
 /*--
 Media queries
 --*/
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    .hero__msg>p {
-        display: none;
+
+@media only screen and (min-width: 450px) and (max-width: 650px) {
+    .hero{
+        grid-template-columns: none;
+        gap: 0;
     }
 
-    .stats .container,
-    .stats h1 {
-        min-width: 25vw;
-        font-size: 1em;
+    .hero__msg,
+    .hero__illustration{
+        width: 100%;
+        text-align: center;
     }
-
+    
     .hero__msg h1 {
-        font-size: 2em;
+        font-size: 3em; 
+        line-height: 1em;
+        width: 100%;
     }
 
-    .hero__msg p,
-    .button a {
-        font-size: 0.8em;
+    .msg__content{
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .msg__content p{
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+
+    .btn-hero{
+        font-size: 1em;
+        padding: 2% 3%;
+    }
+
+    .stats{
+        margin-top: 8%;
+    }
+
+    .stats__intro{
+        padding: 2% 20%;
+    }
+
+    .stats__content{
+        padding: 0 120px;
+        margin: 2% 0;
+    }
+
+    .stats > p{
+        font-size: 0.9em;
+    }
+
+    .youtube__desc{
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+    
+    .feature__content{
+        height: 100%;
+        overflow: visible;
+    }
+    
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+    .hero{
+        padding: 15% 3% 0 5%;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 3em;
+    }
+    
+    .hero__msg h1 {
+        font-size: 3.5em; 
+        line-height: 1em;
+    }
+
+    .msg__content{
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .msg__content p{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .btn-hero{
+        font-size: 1em;
+        padding: 2% 3%;
+    }
+
+    .stats{
+        margin-top: 8%;
+    }
+
+    .stats__intro{
+        padding: 2% 20%;
+    }
+
+    .stats__content{
+        padding: 0 120px;
+        margin: 2% 0;
+    }
+
+    .stats > p{
+        font-size: 0.9em;
+    }
+
+    .youtube__desc{
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .feature__content {
+        height: 220px;
+    }
+    
+    .col-1 {
+        width: 350px;
+    }
+    
+    .col-2 {
+        width: 160px;
+    }
+    
+    .col__img {
+        position: relative;
     }
 
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 0;
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .hero{
+        padding: 15% 8% 0 8%;
+        grid-template-columns: 1.2fr 1fr;
     }
-
-    .hero__msg>p {
-        display: none;
-    }
-
-    .hero,
-    .msg__content {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-
+    
     .hero__msg h1 {
-        width: 100%;
+        font-size: 3.2em; 
+        line-height: 1em;
     }
 
-    #btn-hero {
-        position: relative;
-        width: 50%;
-        margin: 2%;
+    .msg__content{
+        margin-left: 20px;
+        width: 90%;
     }
 
-    .hero .grid {
-        grid-template-columns: none;
+    .msg__content p{
+        font-size: 0.9em;
+        line-height: 1.6em;
     }
 
-    #illustration img {
-        width: 70%;
-    }
-
-    .stats .container,
-    .stats h1 {
-        padding: 0 20%;
+    .btn-hero{
         font-size: 1em;
+        padding: 2% 3%;
     }
 
-    .stats .content {
-        font-size: 1em;
-        min-width: 25vw;
+    .stats{
+        margin-top: 8%;
     }
 
-    .stats-illust img {
-        margin-top: 30%;
+    .stats > p{
+        font-size: 0.9em;
+    }
+
+    .youtube__desc{
+        text-align: center;
         width: 100%;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .hero{
+        padding: 15% 10% 0 10%;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero__msg h1 {
+        font-size: 4em; 
     }
 
-    .newsletter .details {
-        transform: scale(0.9);
-    }
-
-    .newsletter .image {
-        width: 40%;
-        padding: 2%;
-        margin: 0;
-    }
-
-    #btn-hero {
-        border: none;
-    }
-
-    #btn-hero:hover {
-        background-color: var(--primary-color);
-        border: none;
-        color: var(--text-color);
-        transform: none;
+    .msg__content{
+        margin-left: 15px;
+        width: 100%;
     }
 }

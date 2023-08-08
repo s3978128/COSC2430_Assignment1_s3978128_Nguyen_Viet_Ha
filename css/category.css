@@ -4,6 +4,7 @@
     position: relative;
     filter: drop-shadow(0 0 1px rgb(42, 47, 79, 0.7));
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .book__img{

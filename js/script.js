@@ -6,13 +6,20 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 80);
 });
 
-/*Carousel*/
+/*Hamburger menu :)*/
 
-//Slide img on mouse drag
-const carousel = document.querySelector(".carousel");
+let menu = document.querySelector("#menu-icon");
+let closeMenu = document.querySelector("#close-icon");
+let navbar = document.querySelector("header .navbar ul");
 
-const dragging = (e) =>{
-    carousel.scrollLeft = e.pageX;
+menu.onclick = () => {
+    menu.classList.toggle("active");
+    closeMenu.classList.toggle("active");
+    navbar.classList.toggle("open");
 }
 
-carousel.addEventListener("mousemove", dragging);
+closeMenu.onclick = () => {
+    menu.classList.toggle("active");
+    closeMenu.classList.toggle("active");
+    navbar.classList.toggle("open");
+}
