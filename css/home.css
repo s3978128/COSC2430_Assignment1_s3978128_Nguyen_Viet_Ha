@@ -291,7 +291,7 @@ Newsletter section
 Media queries
 --*/
 
-@media only screen and (min-width: 320px) and (max-width: 530px) {
+@media only screen and (max-width: 530px) {
     .hero {
         grid-template-columns: none;
         gap: 0;

@@ -423,7 +423,7 @@ footer nav a:hover {
     width: 100%;
     padding: 1% 8%;
 }
-
+  
 .banner__desc{
     width: 70%;
 }
@@ -486,7 +486,7 @@ footer nav a:hover {
 
 /*Media queries*/
 
-@media only screen and (min-width: 320px) and (max-width: 530px) {
+@media only screen and (max-width: 530px) {
     :root {
         --h1-font: 1.3em;
         --h2-font: 0.8em;
