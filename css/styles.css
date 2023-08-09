@@ -293,36 +293,13 @@ Book showcase cards (used in homepage and category page)
 }
 
 .book__title {
-    font-size: 1.3em;
+    font-size: clamp(1.2em, 1vw, 1.5em);
 }
 
 .book__desc {
-    font-size: var(--p-font);
+    font-size: clamp(0.8em, 1vw, 1.2em);
     font-weight: 500;
     line-height: 1.8em;
-}
-
-.book__price {
-    position: relative;
-    font-size: 1.2em;
-}
-
-.book__price--old {
-    position: relative;
-    text-decoration: line-through;
-    color: #999;
-    margin-left: 10px;
-}
-
-.book__price--notice {
-    position: absolute;
-    top: -5px;
-    left: 60px;
-    background-color: #ff6b6b;
-    color: var(--bg-color);
-    width: 200%;
-    padding: 2px 5px;
-    border-radius: 4px;
 }
 
 .price-btn {
@@ -422,10 +399,11 @@ footer nav a:hover {
     color: var(--bg-color);
     width: 100%;
     padding: 1% 8%;
+    font-size: clamp(0.8em, 1.3vw, 1.8em);
 }
   
 .banner__desc{
-    width: 70%;
+    width: 80%;
 }
 
 .banner__title {
@@ -446,10 +424,10 @@ footer nav a:hover {
 
 .h-right #menu-icon,
 .h-right #close-icon {
-    font-size: 3em;
+    font-size: 2.8em;
     position: absolute;
     right: 3%;
-    top: 8px;
+    top: 2vh;
 }
 
 
@@ -485,434 +463,7 @@ footer nav a:hover {
 }
 
 /*Media queries*/
-
-@media only screen and (max-width: 530px) {
-    :root {
-        --h1-font: 1.3em;
-        --h2-font: 0.8em;
-        --p-font: 0.7em;
-    }
-    
-    /*Show hamburger menu*/
-
-    .h-right #menu-icon{
-        display: block;
-    }
-
-    .h-right #close-icon{
-        display: none;
-    }
-
-    header{
-        overflow: visible;
-    }
-
-    header .navbar ul{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        height: 100vh;
-        top: 0;
-        bottom: 0;
-        left: 100%;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: var(--shadow-color);
-        transition: all 0.5s ease;
-        padding: 60px 8px;
-    }
-
-    header .navbar a{
-        margin-bottom: 40px;
-        font-size: 2rem;
-        color: var(--bg-color);
-        font-weight: 500;
-    }
-
-    header .navbar a:hover,
-    header .h-right i:hover{
-        border-bottom: none;
-        color: var(--text-color);
-        transform: none;
-    }
-
-
-    /*Show close icon when menu clicked*/
-
-    header .navbar .open{
-        left: 0;
-    }
-
-    #menu-icon.active{
-        display: none;
-    }
-
-    #close-icon.active{
-        display: block;
-    }
-
-    header {
-        padding: 1% 2% 1% 4%;
-    }
-
-    .logo{
-        width: 40%;
-    }
-
-    .h-right{
-        margin-right: 15%;
-    }
-
-    .h-right i {
-        padding: 5px;
-        font-size: 1.4em;
-    }
-    
-    .h-right #menu-icon{
-        font-size: 2.5em;
-    }
-
-    .logo h1 {
-        font-size: var(--h2-font);
-    }
-
-    .category__title>p {
-        font-size: var(--h2-font);
-    }
-
-    .book {
-        width: 320px;
-        height: 220px;
-    }
-
-    .book__img {
-        width: 90px;
-        left: 5px;
-    }
-
-    .book__data{
-        width: 60%;
-        transform: translateX(110px);
-        padding: 5%;
-    }
-
-    .book__price--old{
-        margin-left: 5px;
-        font-size: 0.8em;
-    }
-
-    .book__price--notice{
-        left: 35px;
-        font-size: 0.8em;
-        width: 130%;
-    }
-
-    .book__desc{
-        font-size: 0.75em;
-    }
-
-    .price-btn {
-        padding: 5% 8%;
-        font-size: var(--h2-font);
-    }
-
-    footer nav a{
-        font-size: 0.7em;
-        padding: 5px;
-        margin: 0;
-    }
-
-    .soc-med-icons i{
-        font-size: 1.5em;
-        margin-bottom: 10px;
-        padding: 2px;
-    }
-
-}
-
-@media only screen and (min-width: 530px) and (max-width: 650px) {
-    :root {
-        --h1-font: 1.8em;
-        --h2-font: 1.1em;
-        --p-font: 0.7em;
-    }
-    
-    /*Show hamburger menu*/
-
-    .h-right #menu-icon{
-        display: block;
-    }
-
-    .h-right #close-icon{
-        display: none;
-    }
-
-    header{
-        overflow: visible;
-    }
-
-    header .navbar ul{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        height: 100vh;
-        top: 0;
-        bottom: 0;
-        left: 100%;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: var(--shadow-color);
-        transition: all 0.5s ease;
-        padding: 60px 20px;
-    }
-
-    header .navbar a{
-        margin-bottom: 40px;
-        font-size: 2rem;
-        color: var(--bg-color);
-        font-weight: 500;
-    }
-
-    header .navbar a:hover,
-    header .h-right i:hover{
-        border-bottom: none;
-        color: var(--text-color);
-        transform: none;
-    }
-
-
-    /*Show close icon when menu clicked*/
-
-    header .navbar .open{
-        left: 0;
-    }
-
-    #menu-icon.active{
-        display: none;
-    }
-
-    #close-icon.active{
-        display: block;
-    }
-
-    header {
-        padding: 1% 2% 1% 7%;
-    }
-
-    .h-right i {
-        padding: 10px;
-        font-size: 1.6em;
-    }
-    
-    .h-right #menu-icon{
-        font-size: 2.5em;
-    }
-
-    .h-right{
-        margin-right: 10%;
-    }
-
-    .logo h1 {
-        font-size: var(--h2-font);
-    }
-
-    .category__title>p {
-        font-size: var(--h2-font);
-    }
-
-    .book {
-        width: 450px;
-    }
-
-    .book__img {
-        width: 150px;
-        left: 10px;
-    }
-
-    .book__data{
-        width: 60%;
-        transform: translateX(190px);
-        padding: 5%;
-    }
-
-    .book__title {
-        font-size: var(--h1-font);
-    }
-
-    .book__desc {
-        font-size: var(--h2-font);
-        margin-bottom: 15px;
-    }
-
-    .price-btn {
-        padding: 5% 8%;
-        font-size: var(--h2-font);
-    }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 800px) {
-    :root {
-        --h1-font: 1.8em;
-        --h2-font: 1em;
-        --p-font: 0.7em;
-    }
-
-    /*Show hamburger menu*/
-
-    .h-right #menu-icon{
-        display: block;
-    }
-
-    .h-right #close-icon{
-        display: none;
-    }
-
-    header .navbar ul{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        height: 100vh;
-        top: 0;
-        bottom: 0;
-        left: 100%;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: var(--shadow-color);
-        transition: all 0.5s ease;
-        padding: 70px 20px;
-    }
-
-    header .navbar a{
-        margin-bottom: 40px;
-        font-size: 2rem;
-        color: var(--bg-color);
-        font-weight: 500;
-    }
-
-    header .navbar a:hover,
-    header .h-right i:hover{
-        border-bottom: none;
-        color: var(--text-color);
-        transform: none;
-    }
-
-    /*Show close icon when menu clicked*/
-
-    header .navbar .open{
-        left: 0;
-    }
-
-    #menu-icon.active{
-        display: none;
-    }
-
-    #close-icon.active{
-        display: block;
-    }
-    
-
-    header {
-        padding: 1% 2% 1% 7%;
-        overflow: visible;
-    }
-
-    .h-right{
-        margin-right: 10%;
-    }
-
-    .h-right i {
-        font-size: 1.5em;;
-        padding: 10px;
-    }
-
-    .logo h1 {
-        font-size: var(--h2-font);
-    }
-
-    .category__title>p {
-        font-size: var(--h2-font);
-    }
-
-    .book {
-        width: 500px;
-    }
-
-    .book__img {
-        width: 160px;
-        left: 10px;
-    }
-
-    .book__title {
-        font-size: var(--h1-font);
-    }
-
-    .book__desc {
-        font-size: var(--h2-font);
-        margin-bottom: 15px;
-    }
-
-    .price-btn {
-        padding: 5% 8%;
-        font-size: var(--h2-font);
-    }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
-    :root {
-        --h1-font: 2em;
-        --h2-font: 1em;
-        --p-font: 0.9em;
-    }
-
-    header {
-        padding: 1% 3% 1% 8%;
-    }
-
-    header nav a,
-    .h-right i {
-        padding: 5px;
-    }
-
-    header .navbar {
-        margin-left: 50px;
-    }
-
-    .logo h1 {
-        font-size: var(--h2-font);
-    }
-
-    .book {
-        width: 500px;
-    }
-
-    .book__img {
-        width: 160px;
-        left: 10px;
-    }
-
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-    :root {
-        --h1-font: 2.5em;
-        --h2-font: 1.3em;
-        --p-font: 0.88em;
-    }
-
-    header {
-        padding: 0 5% 0 10%;
-    }
-
-    .logo h1 {
-        font-size: var(--h2-font);
-    }
-
+@media only screen and (max-width: 1250px) {
     .book {
         width: 380px;
     }
@@ -924,15 +475,201 @@ footer nav a:hover {
 
     .book__data {
         width: 65%;
-        transform: translateX(150px);
+        transform: translateX(140px);
         padding: 5%;
     }
 
-    .book__price--notice {
-        width: 140%;
-    }
 
     .price-btn {
         padding: 5%;
     }
 }
+
+
+@media only screen and (max-width: 800px) {
+
+    /*Show hamburger menu*/
+
+    .h-right #menu-icon{
+        display: block;
+    }
+
+    .h-right #close-icon{
+        display: none;
+    }
+
+    header .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--shadow-color);
+        transition: all 0.5s ease;
+        padding: 15% 3%;
+    }
+
+    header .navbar a{
+        margin-bottom: 40px;
+        font-size: 2rem;
+        color: var(--bg-color);
+        font-weight: 500;
+    }
+
+    header .navbar a:hover,
+    header .h-right i:hover{
+        border-bottom: none;
+        color: var(--text-color);
+        transform: none;
+    }
+
+    /*Show close icon when menu clicked*/
+
+    header .navbar .open{
+        left: 0;
+    }
+
+    #menu-icon.active{
+        display: none;
+    }
+
+    #close-icon.active{
+        display: block;
+    }
+
+    /*Adjust header nav*/
+
+    header {
+        padding: 1% 2% 1% 7%;
+        overflow: visible;
+    }
+
+    .h-right{
+        margin-right: 12vw;
+    }
+
+    .h-right i {
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+
+    /*--Adjust book showcase cards*/
+
+    .book {
+        width: 500px;
+    }
+
+    .book__img {
+        width: 160px;
+        left: 10px;
+    }
+
+    .book__data {
+        width: 60%;
+        transform: translateX(200px);
+        padding: 5%;
+    }
+
+    .book__title {
+        font-size: clamp(1em, 1vw, 1.5em);
+    }
+
+    .book__desc {
+        font-size: clamp(1em, 1vw, 1.8em);
+    }
+
+    .price-btn {
+        padding: 3% 8%;
+        font-size: clamp(0.7em, 1.3vw, 2em);
+    }
+
+    .h-right #menu-icon,
+    .h-right #close-icon{
+        font-size: 3em;
+        top: 10px;
+    }
+
+    /*Disable hover effects for touch screen*/
+    .book:hover .book__img{
+        transform: none;
+    }
+
+    .price-btn{
+        opacity: 1;
+    }
+
+    .book__data{
+        background-color: var(--cream-color);
+    }
+
+    /*Banner for category and contact pages*/
+    .banner{
+        height: 40vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 530px) {
+    .h-right #menu-icon,
+    .h-right #close-icon{
+        font-size: 1.8em;
+    }
+
+    .book {
+        width: 300px;
+        height: 220px;
+    }
+
+    .book__img {
+        width: 90px;
+        left: 5px;
+    }
+
+    .book__data{
+        width: 60%;
+        transform: translateX(120px);
+        padding: 5%;
+    }
+
+    .book__title {
+        font-size: clamp(1em, 1vw, 1.5em);
+    }
+
+    .book__desc {
+        font-size: clamp(0.6em, 1vw, 1.8em);
+    }
+
+    footer nav a{
+        font-size: 0.6em;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .soc-med-icons i{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    /*Banner for category and contact pages*/
+    .banner{
+        height: 30vh;
+    }
+
+    .banner__content{
+        width: 100%;
+        font-size: clamp(0.6em, 1.3vw, 1.8em);
+        line-height: 1.5em;
+    }
+
+}
+
+

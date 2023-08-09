@@ -9,6 +9,7 @@ form {
 label, legend{
     padding: 5px 10px 5px 0;
     display: inline-block;
+    font-size: clamp(0.8em, 1.2vw, 1.3em);
 }
 
 input[type="text"],
@@ -84,12 +85,20 @@ fieldset {
 }
 
 @media screen and (max-width: 768px) {
-    .col-30, .col-70, input[type=submit] {
+    .col-30, .col-70{
       width: 100%;
       margin-top: 0;
     }
 
     form {
-        max-width: 70%;
+        max-width: 80%;
+    }
+
+    .inline{
+        display: flex;
+    }
+
+    .inline .col-30{
+        width: 70%;
     }
   }

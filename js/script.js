@@ -24,9 +24,24 @@ closeMenu.onclick = () => {
     navbar.classList.toggle("open");
 }
 
-function clickme(smallImg) {
+/*Slider for book page*/
 
-    var fullImg = document.getElementById("imagebox");
-    fullImg.src = smallImg.src;
+function clickme(image) {
+    var show = document.getElementById("showcase");
+    show.src = image.src;
+}
 
+/*Required checkbox for contact form*/
+
+function validateForm() {
+    var checkbox1 = document.getElementById('check-1');
+    var checkbox2 = document.getElementById('check-2');
+    
+    if (checkbox1.checked || checkbox2.checked) {
+        return true;
+    } 
+    else {
+        alert("Please check at least one checkbox.");
+        return false;
+    }
 }

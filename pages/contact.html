@@ -35,7 +35,7 @@ Acknowledgement:
 
 </head>
 
-<body>
+<body> 
     <!-- Main header -->
 
     <header>
@@ -81,7 +81,7 @@ Acknowledgement:
             <i id="menu-icon" class="ri-menu-line"></i>
             <i id="close-icon" class="ri-close-line"></i>
         </div>
-
+ 
     </header>
  
     <!-- Main content -->
@@ -98,7 +98,7 @@ Acknowledgement:
 
         <!-- Contact form -->
 
-        <form id="contact" action="" method="post">
+        <form id="contact" action="" method="post" onsubmit="return validateForm()">
             <div class="row">
                 <div class="col-30">
                     <label for="contact-purpose">Contact Purpose:</label>
@@ -143,18 +143,18 @@ Acknowledgement:
             </div>
 
             <fieldset>
-                <div class="row">
+                <div class="row inline">
                     <div class="col-30">
                         <legend>Contact Preference:</legend>
                     </div>
 
                     <div class="col-70">
                         <label>
-                            <input type="checkbox" name="contact-preference[]" value="email">
+                            <input type="checkbox" id="check-1" name="contact-preference[]" value="email">
                             By email
                         </label>
                         <label>
-                            <input type="checkbox" name="contact-preference[]" value="phone">
+                            <input type="checkbox" id="check-2" name="contact-preference[]" value="phone">
                             By phone
                         </label>
                     </div>
@@ -162,7 +162,7 @@ Acknowledgement:
             </fieldset>
 
             <fieldset>
-                <div class="row">
+                <div class="row inline">
                     <div class="col-30">
                         <legend>Receive Weekly Newsletter:</legend>
                     </div>

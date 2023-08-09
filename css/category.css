@@ -30,7 +30,7 @@
 }
 
 .book__title {
-    font-size: 1.3em;
+    font-size: clamp(1em, 1.5vw, 1.3em);
 }
 
 .book__price {
@@ -38,7 +38,7 @@
 }
 
 .price-btn{
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 .book:hover .book__data{
@@ -46,7 +46,8 @@
     background-color: rgba(239, 230, 230, 0.98);
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 860px){
+
     .book{
         width: 210px;
         height: 350px;
