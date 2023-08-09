@@ -1,0 +1,232 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CozyVerse - Nonfiction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon Link-->
+    <link rel="icon" href="../../images/bookstore-favicon.png" type="/png">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/category.css">
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <!--Remixicons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <!-- Main header -->
+
+    <header>
+        <!-- Header with logo image -->
+
+        <a href="../../index.html">
+            <div class="logo">
+                <img src="../../images/bookstore-favicon.png" alt="Bookstore Logo">
+                <h1>
+                    CozyVerse <span>Books</span>
+                </h1>
+            </div>
+        </a>
+
+
+        <!-- vertical menu (horizontal on desktop devices) -->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="fiction.html">Fiction</a>
+                    </li>
+                    <li>
+                        <a href="nonfiction.html">Nonfiction</a>
+                    </li>
+                    <li>
+                        <a href="../../pages/contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="h-right">
+            <!--Decorative icons-->
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-3-line"></i>
+
+            <!--Used for mobile menu-->
+            <i id="menu-icon" class="ri-menu-line"></i>
+            <i id="close-icon" class="ri-close-line"></i>
+        </div>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- To top button -->
+        <button onclick="topFunction()" id="top-btn" title="Go to top">
+            <i class="ri-arrow-up-s-line"></i>
+        </button>
+        
+        <!-- Banner -->
+        <div class="banner">
+            <div class="banner__content">
+                <h1 class="banner__title">Nonfiction</h1>
+                <p class="banner__desc">
+                    Nonfiction is any document or content that purports in good faith to represent truth and accuracy regarding information, events, or people.
+                </p>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category__title">
+                <h1>
+                    Art and Photography
+                </h1>
+            </div>
+            <div class="category__items">
+                <div class="book">
+                    <img src="../../images/books/art and fear/art-and-fear.jpg" alt="Art and Fear" class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            Art and Fear
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../book/nonfiction/art-and-fear.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img src="../../images/books/on photography/on-photography.jpg" alt="On Photography" class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            On Photography
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../book/nonfiction/on-photography.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img src="../../images/books/letters van gogh/letters-van-gogh.jpg" alt="Letters of Van Gogh" class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            Letters of Van Gogh
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../book/nonfiction/letters-van-gogh.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="category">
+            <div class="category__title">
+                <h1>
+                    Cookbooks
+                </h1>
+            </div>
+            <div class="category__items">
+                <div class="book">
+                    <img src="../../images/books/moosewood/moosewood.jpg" alt="Moosewood Cookbook" class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            Moosewood Cookbook
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../book/nonfiction/moosewood-cookbook.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img src="../../images/books/family style/family-style.jpg" alt="Family Style" class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            Family Style
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../book/nonfiction/family-style.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img src="../../images/books/homebrew/homebrew.jpg" alt="Mastering Homebrew" class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            Mastering Homebrew
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../book/nonfiction/mastering-homebrew.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!-- Footer with horizontal nav bar -->
+    <footer>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../contact.html">About Us</a></li>
+                    <li><a href="../contact.html">Privacy Policy</a></li>
+                    <li><a href="../contact.html">Terms</a></li>
+                    <li><a href="../contact.html">Copyright</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="soc-med-icons">
+                <i class="ri-facebook-circle-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS Link-->
+    <script src="../../js/script.js"></script>
+
+</body>
+
+</html>

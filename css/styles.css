@@ -87,6 +87,24 @@ img {
     transition: 0.3s ease;
 }
 
+#top-btn {
+    opacity: 0;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    z-index: 99;
+    font-size: 2em;
+    border: none;
+    outline: none;
+    background-color: var(--shadow-color);
+    color: var(--bg-color);
+    opacity: 0.9;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    transition: 0.2s ease;
+}
+
 /*Same CSS for header and footer navbar*/
 
 header,
@@ -148,7 +166,7 @@ header {
     font-size: var(--p-font);
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -401,8 +419,8 @@ footer nav a:hover {
     padding: 1% 8%;
     font-size: clamp(0.8em, 1.3vw, 1.8em);
 }
-  
-.banner__desc{
+
+.banner__desc {
     width: 80%;
 }
 
@@ -490,15 +508,15 @@ footer nav a:hover {
 
     /*Show hamburger menu*/
 
-    .h-right #menu-icon{
+    .h-right #menu-icon {
         display: block;
     }
 
-    .h-right #close-icon{
+    .h-right #close-icon {
         display: none;
     }
 
-    header .navbar ul{
+    header .navbar ul {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -515,7 +533,7 @@ footer nav a:hover {
         padding: 15% 3%;
     }
 
-    header .navbar a{
+    header .navbar a {
         margin-bottom: 40px;
         font-size: 2rem;
         color: var(--bg-color);
@@ -523,7 +541,7 @@ footer nav a:hover {
     }
 
     header .navbar a:hover,
-    header .h-right i:hover{
+    header .h-right i:hover {
         border-bottom: none;
         color: var(--text-color);
         transform: none;
@@ -531,15 +549,15 @@ footer nav a:hover {
 
     /*Show close icon when menu clicked*/
 
-    header .navbar .open{
+    header .navbar .open {
         left: 0;
     }
 
-    #menu-icon.active{
+    #menu-icon.active {
         display: none;
     }
 
-    #close-icon.active{
+    #close-icon.active {
         display: block;
     }
 
@@ -550,7 +568,7 @@ footer nav a:hover {
         overflow: visible;
     }
 
-    .h-right{
+    .h-right {
         margin-right: 12vw;
     }
 
@@ -591,26 +609,26 @@ footer nav a:hover {
     }
 
     .h-right #menu-icon,
-    .h-right #close-icon{
+    .h-right #close-icon {
         font-size: 3em;
         top: 10px;
     }
 
     /*Disable hover effects for touch screen*/
-    .book:hover .book__img{
+    .book:hover .book__img {
         transform: none;
     }
 
-    .price-btn{
+    .price-btn {
         opacity: 1;
     }
 
-    .book__data{
+    .book__data {
         background-color: var(--cream-color);
     }
 
     /*Banner for category and contact pages*/
-    .banner{
+    .banner {
         height: 40vh;
     }
 
@@ -618,8 +636,9 @@ footer nav a:hover {
 
 
 @media only screen and (max-width: 530px) {
+
     .h-right #menu-icon,
-    .h-right #close-icon{
+    .h-right #close-icon {
         font-size: 1.8em;
     }
 
@@ -633,7 +652,7 @@ footer nav a:hover {
         left: 5px;
     }
 
-    .book__data{
+    .book__data {
         width: 60%;
         transform: translateX(120px);
         padding: 5%;
@@ -647,29 +666,27 @@ footer nav a:hover {
         font-size: clamp(0.6em, 1vw, 1.8em);
     }
 
-    footer nav a{
+    footer nav a {
         font-size: 0.6em;
         padding: 5px;
         margin: 0;
     }
 
-    .soc-med-icons i{
+    .soc-med-icons i {
         font-size: 1.5em;
         margin-bottom: 10px;
         padding: 2px;
     }
 
     /*Banner for category and contact pages*/
-    .banner{
+    .banner {
         height: 30vh;
     }
 
-    .banner__content{
+    .banner__content {
         width: 100%;
         font-size: clamp(0.6em, 1.3vw, 1.8em);
         line-height: 1.5em;
     }
 
 }
-
-

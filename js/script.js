@@ -6,6 +6,27 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 80);
 });
 
+/*Scroll to top button*/
+let topButton = document.querySelector("#top-btn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.opacity = "0.8";
+  } else {
+    topButton.style.opacity = "0";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  topButton.style.opacity = 0;
+});
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 /*Hamburger menu :)*/
 
 let menu = document.querySelector("#menu-icon");
@@ -29,7 +50,7 @@ closeMenu.onclick = () => {
 function clickme(image) {
     var show = document.getElementById("showcase");
     show.src = image.src;
-}
+} 
 
 /*Required checkbox for contact form*/
 
