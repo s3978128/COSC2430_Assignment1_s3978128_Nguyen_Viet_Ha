@@ -45,3 +45,29 @@
     transform: translateY(250px);
     background-color: rgba(239, 230, 230, 0.98);
 }
+
+@media only screen and (max-width: 768px){
+    .book{
+        width: 210px;
+        height: 350px;
+    }
+
+    .book__img{
+        top: 12px;
+        left: calc((200px - 130px) / 2);
+        width: 130px;
+    }
+
+    .book__data{
+        transform: translateY(230px);
+        background-color: rgba(239, 230, 230, 0.98);
+    }
+
+    .price-btn{
+        opacity: 1;
+    }
+
+    .book:hover .book__data{
+        transform: none;
+    }
+}

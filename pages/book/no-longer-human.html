@@ -1,0 +1,181 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CozyVerse Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon Link-->
+    <link rel="icon" href="../../../../images/bookstore-favicon.png" type="/png">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../../../../css/styles.css">
+    <link rel="stylesheet" href="../../../../css/book.css">
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <!--Remixicons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <!-- Main header -->
+
+    <header>
+        <!-- Header with logo image -->
+        <div class="logo">
+            <img src="../../../../images/bookstore-favicon.png" alt="Bookstore Logo">
+            <h1>
+                CozyVerse <span>Books</span>
+            </h1>
+        </div>
+
+        <!-- vertical menu (horizontal on desktop devices) -->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/categ-1-fiction.html">Fiction</a>
+                    </li>
+                    <li>
+                        <a href="pages/list.html">Nonfiction</a>
+                    </li>
+                    <li>
+                        <a href="pages/list.html">Textbooks</a>
+                    </li>
+                    <li>
+                        <a href="pages/contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="h-right">
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-3-line"></i>
+            <i id="menu-icon" class="ri-menu-line"></i>
+            <i id="close-icon" class="ri-close-line"></i>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <ul class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="category.html">Fiction</a></li>
+            <li>No Longer Human</li>
+        </ul>
+        
+        <div class="product">
+            <div class="col">
+                <div class="slider">
+                    <div class="preview-image">
+                        <img src="../../images/no-longer-human.jpg" id="imagebox" alt="">
+                    </div>
+
+                    <div class="small-images">
+                        <img src="../../images/no-longer-human.jpg" alt="" onclick="clickme(this)">
+                        <img src="../../images/no-longer-human-1.jpg" alt="" onclick="clickme(this)">
+                        <img src="../../images/no-longer-human-2.jpg" alt="" onclick="clickme(this)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product__desc">
+                    <h1>No Longer Human</h1>
+
+                    <div class="product__rating">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+
+                    <div class="product__price">
+                        <p class="old-price">Old Price: $14.99</p>
+                        <p class="new-price">New Price: <span>$9.99 (30%)</span></p>
+                    </div>
+
+                    <ul class="product__details">
+                        <li>Available: <span>In stock!</span></li>
+                        <li>Shipping Area: <span>Globally</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+
+                    <div class="product__purchase">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="0" value="1">
+                        <button class="btn cart-btn">
+                            <i class="ri-shopping-cart-line"></i>Add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="long-desc">
+            <h1>No Longer Human</h1>
+            <p>
+                No Longer Human is a Japanese novel by Osamu Dazai. It is considered the author's masterpiece and ranks
+                as the second-best selling novel in Japan, behind Natsume Sōseki's Kokoro. The novel, narrated in the
+                first person, chronicles the life of an unnamed narrator who feels his personality is an "emptiness" and
+                a "hole". It is considered Dazai's masterpiece and ranks as the second-best selling novel in Japan,
+                behind Natsume Sōseki's Kokoro. The novel, narrated in the first person, chronicles the life of an
+                unnamed narrator who feels his personality is an "emptiness" and a "hole".
+            </p>
+        </div>
+
+    </main>
+    <!-- Main content -->
+
+    <!-- Footer with horizontal nav bar -->
+    <footer>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#copyright">Copyright</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="soc-med-icons">
+                <i class="ri-facebook-circle-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS Link-->
+    <script src="../../../../js/script.js"></script>
+
+</body>
+
+</html>

@@ -23,3 +23,10 @@ closeMenu.onclick = () => {
     closeMenu.classList.toggle("active");
     navbar.classList.toggle("open");
 }
+
+function clickme(smallImg) {
+
+    var fullImg = document.getElementById("imagebox");
+    fullImg.src = smallImg.src;
+
+}
