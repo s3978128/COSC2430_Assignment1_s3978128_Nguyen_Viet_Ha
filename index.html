@@ -41,12 +41,15 @@ Acknowledgement:
     <header>
         <!-- Header with logo image -->
 
-        <div class="logo">
-            <img src="images/bookstore-favicon.png" alt="Bookstore Logo">
-            <h1>
-                CozyVerse <span>Books</span>
-            </h1>
-        </div>
+        <a href="index.html">
+            <div class="logo">
+                <img src="images/bookstore-favicon.png" alt="Bookstore Logo">
+                <h1>
+                    CozyVerse <span>Books</span>
+                </h1>
+            </div>
+        </a>
+
 
         <!-- vertical menu (horizontal on desktop devices) -->
         <div class="navbar">
@@ -56,13 +59,10 @@ Acknowledgement:
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="pages/categ-1-fiction.html">Fiction</a>
+                        <a href="pages/category/fiction.html">Fiction</a>
                     </li>
                     <li>
-                        <a href="pages/list.html">Nonfiction</a>
-                    </li>
-                    <li>
-                        <a href="pages/list.html">Textbooks</a>
+                        <a href="pages/category/nonfiction.html">Nonfiction</a>
                     </li>
                     <li>
                         <a href="pages/contact.html">Contacts</a>
@@ -72,9 +72,12 @@ Acknowledgement:
         </div>
 
         <div class="h-right">
+            <!--Decorative icons-->
             <i class="ri-search-line"></i>
             <i class="ri-shopping-cart-line"></i>
             <i class="ri-user-3-line"></i>
+
+            <!--Used for mobile menu-->
             <i id="menu-icon" class="ri-menu-line"></i>
             <i id="close-icon" class="ri-close-line"></i>
         </div>
@@ -98,35 +101,38 @@ Acknowledgement:
                         favorite stories and immerse themselves in a world of comfort and elegance.
                     </p>
 
+                    <!--Jump to fiction showcase-->
                     <a href="#showcase" class="btn btn-hero">
                         Start Browsing
                     </a>
                 </div>
             </div>
             <div class="hero__illustration">
-                <img id="illust" src="images/home-illust.png" alt="Main illustration">
+                <img id="illust" src="images/homepage/home-illust.png" alt="Main illustration">
             </div>
 
         </section>
 
         <!--Stats Showcase-->
         <section class="stats">
+            <!--Introduction-->
             <div class="stats__intro">
                 <div class="stats__illust">
-                    <img src="images/generic-illust-1.png" alt="Book and tea">
+                    <img src="images/homepage/generic-illust-1.png" alt="Book Illust">
                 </div>
                 <h1 class="stats__intro-msg">
                     CozyVerse Books is a one-of-a-kind bookstore that celebrates the mesmerizing allure of literary and
                     the vastness of human knowledge.
                 </h1>
             </div>
-
+                
+            <!--Statistics-->
             <div class="stats__content">
                 <div class="stats__item">
                     <h3>
                         10000+
                     </h3>
-                    <img src="images/books.gif" alt="book icon">
+                    <img src="images/homepage/books.gif" alt="book icon">
                     <p>
                         Books
                     </p>
@@ -135,7 +141,7 @@ Acknowledgement:
                     <h3>
                         1000+
                     </h3>
-                    <img src="images/feather-pen.gif" alt="author icon">
+                    <img src="images/homepage/feather-pen.gif" alt="author icon">
                     <p>
                         Authors
                     </p>
@@ -144,14 +150,14 @@ Acknowledgement:
                     <h3>
                         1000+
                     </h3>
-                    <img src="images/publish.gif" alt="publisher icon">
+                    <img src="images/homepage/publish.gif" alt="publisher icon">
                     <p>
                         Publishers
                     </p>
                 </div>
             </div>
             <p>
-                * Stats are for illustration purposes only.
+                * Numbers are for illustration purposes only.
             </p>
 
         </section>
@@ -161,7 +167,7 @@ Acknowledgement:
         <section id="showcase">
             <div class="category">
                 <div class="category__title">
-                    <a href="" class="btn">
+                    <a href="pages/category/fiction.html" class="btn">
                         Fiction
                     </a>
                     <p>
@@ -172,7 +178,7 @@ Acknowledgement:
                 <div class="category__items">
 
                     <div class="book">
-                        <img src="images/no-longer-human.jpg" alt="book 1" class="book__img">
+                        <img src="images/books/no longer human/no-longer-human.jpg" alt="No Longer Human" class="book__img">
 
                         <div class="book__data">
                             <h1 class="book__title">
@@ -194,12 +200,12 @@ Acknowledgement:
                                 novel in Japan, behind Natsume Sōseki's Kokoro.
                             </p>
 
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                            <a href="pages/book/fiction/no-longer-human.html" class="btn price-btn">See Details</a>
                         </div>
                     </div>
 
                     <div class="book">
-                        <img src="images/crime-and-punishment.jpg" alt="book 1" class="book__img">
+                        <img src="images/books/crime and punishment/crime-and-punishment.jpg" alt="Crime and Punishment" class="book__img">
 
                         <div class="book__data">
                             <h1 class="book__title">
@@ -217,19 +223,20 @@ Acknowledgement:
                             </span>
 
                             <p class="book__desc">
-                                Crime and Punishment is the second of Dostoevsky's full-length novels following his return from ten years of exile in Siberia.
+                                Crime and Punishment is the second of Dostoevsky's full-length novels following his
+                                return from ten years of exile in Siberia.
                             </p>
 
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                            <a href="pages/book/fiction/crime-and-punishment.html" class="btn price-btn">See Details</a>
                         </div>
                     </div>
 
                     <div class="book">
-                        <img src="images/metamorphosis.jpg" alt="book 1" class="book__img">
+                        <img src="images/books/dorian gray/dorian-gray.jpg" alt="Dorian Gray" class="book__img">
 
                         <div class="book__data">
                             <h1 class="book__title">
-                                The Metamorphosis
+                                The Picture of Dorian Gray
                             </h1>
 
                             <span class="book__price">
@@ -243,19 +250,19 @@ Acknowledgement:
                             </span>
 
                             <p class="book__desc">
-                                One of Kafka's best-known works, the story of salesman Gregor Samsa who wakes one morning to find himself transformed into a huge insect.
+                                A Gothic novel by Oscar Wilde. Fearing the story was indecent, the editor deleted roughly five hundred words without Wilde's knowledge. 
                             </p>
 
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                            <a href="pages/book/fiction/picture-of-dorian-gray.html" class="btn price-btn">See Details</a>
                         </div>
                     </div>
 
                     <div class="book">
-                        <img src="images/poe-tales.jpg" alt="book 1" class="book__img">
+                        <img src="images/books/little women/little-women.jpg" alt="Little Women" class="book__img">
 
                         <div class="book__data">
                             <h1 class="book__title">
-                                E. A. Poe Illustrated Tales
+                                Little Women
                             </h1>
 
                             <span class="book__price">
@@ -269,10 +276,10 @@ Acknowledgement:
                             </span>
 
                             <p class="book__desc">
-                                Stories by Edgar Allan Poe, including classics such as The Fall of the House of Usher and The Murders in the Rue Morgue.
+                                A novel by American author Louisa May Alcott which was originally published in two volumes in 1868 and 1869. 
                             </p>
 
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                            <a href="pages/book/fiction/little-women.html" class="btn price-btn">See Details</a>
                         </div>
                     </div>
 
@@ -294,11 +301,11 @@ Acknowledgement:
                 <div class="category__items">
 
                     <div class="book">
-                        <img src="images/no-longer-human.jpg" alt="book 1" class="book__img">
+                        <img src="images/books/art and fear/art-and-fear.jpg" alt="Art and Fear" class="book__img">
 
                         <div class="book__data">
                             <h1 class="book__title">
-                                No Longer Human
+                                Art and Fear
                             </h1>
 
                             <span class="book__price">
@@ -312,20 +319,19 @@ Acknowledgement:
                             </span>
 
                             <p class="book__desc">
-                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling
-                                novel in Japan, behind Natsume Sōseki's Kokoro.
+                                Art and Fear is a book by David Bayles and Ted Orland that was originally published in 1993. 
                             </p>
 
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                            <a href="pages/book/nonfiction/art-and-fear.html" class="btn price-btn">See Details</a>
                         </div>
                     </div>
 
                     <div class="book">
-                        <img src="images/no-longer-human.jpg" alt="book 1" class="book__img">
+                        <img src="images/books/on photography/on-photography.jpg" alt="On Photography" class="book__img">
 
                         <div class="book__data">
                             <h1 class="book__title">
-                                No Longer Human
+                                On Photography
                             </h1>
 
                             <span class="book__price">
@@ -339,19 +345,18 @@ Acknowledgement:
                             </span>
 
                             <p class="book__desc">
-                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling
-                                novel in Japan, behind Natsume Sōseki's Kokoro.
+                                A 1977 collection of essays by Susan Sontag, originally appeared as a series of essays in the New York Review of Books.
                             </p>
 
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                            <a href="pages/book/nonfiction/on-photography.html" class="btn price-btn">See Details</a>
                         </div>
                     </div>
                     <div class="book">
-                        <img src="images/no-longer-human.jpg" alt="book 1" class="book__img">
+                        <img src="images/books/letters van gogh/letters-van-gogh.jpg" alt="Letters of Vincent Van Giogh" class="book__img">
 
                         <div class="book__data">
                             <h1 class="book__title">
-                                No Longer Human
+                                The Letters of Vincent van Gogh
                             </h1>
 
                             <span class="book__price">
@@ -365,111 +370,15 @@ Acknowledgement:
                             </span>
 
                             <p class="book__desc">
-                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling
-                                novel in Japan, behind Natsume Sōseki's Kokoro.
+                                A collection of surviving letters written or received by Vincent van Gogh.
                             </p>
 
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
+                            <a href="pages/book/nonfiction/letters-van-gogh.html" class="btn price-btn">See Details</a>
                         </div>
                     </div>
 
                 </div>
 
-            </div>
-
-            <div class="category">
-                <!-- a category name as a link -->
-                <div class="category__title">
-                    <a href="" class="btn">
-                        Textbooks
-                    </a>
-                    <p>
-                        New Arrivals! Textbooks on Psychology
-                    </p>
-                </div>
-
-                <!-- Book showcase -->
-                <div class="category__items">
-                    <div class="book">
-                        <img src="images/no-longer-human.jpg" alt="book 1" class="book__img">
-
-                        <div class="book__data">
-                            <h1 class="book__title">
-                                No Longer Human
-                            </h1>
-
-                            <span class="book__price">
-                                $10.99
-                                <span class="book__price--old">
-                                    $15.99
-                                    <span class="book__price--notice">
-                                        30% off
-                                    </span>
-                                </span>
-                            </span>
-
-                            <p class="book__desc">
-                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling
-                                novel in Japan, behind Natsume Sōseki's Kokoro.
-                            </p>
-
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
-                        </div>
-                    </div>
-                    <div class="book">
-                        <img src="images/no-longer-human.jpg" alt="book 1" class="book__img">
-
-                        <div class="book__data">
-                            <h1 class="book__title">
-                                No Longer Human
-                            </h1>
-
-                            <span class="book__price">
-                                $10.99
-                                <span class="book__price--old">
-                                    $15.99
-                                    <span class="book__price--notice">
-                                        30% off
-                                    </span>
-                                </span>
-                            </span>
-
-                            <p class="book__desc">
-                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling
-                                novel in Japan, behind Natsume Sōseki's Kokoro.
-                            </p>
-
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
-                        </div>
-                    </div>
-                    <div class="book">
-                        <img src="images/no-longer-human.jpg" alt="book 1" class="book__img">
-
-                        <div class="book__data">
-                            <h1 class="book__title">
-                                No Longer Human
-                            </h1>
-
-                            <span class="book__price">
-                                $10.99
-                                <span class="book__price--old">
-                                    $15.99
-                                    <span class="book__price--notice">
-                                        30% off
-                                    </span>
-                                </span>
-                            </span>
-
-                            <p class="book__desc">
-                                No Longer Human is considered Dazai's masterpiece and ranks as the second-best selling
-                                novel in Japan, behind Natsume Sōseki's Kokoro.
-                            </p>
-
-                            <a href="pages/b1-no-longer-human.html" class="btn price-btn">See Details</a>
-                        </div>
-                    </div>
-                    
-                </div>
             </div>
         </section>
 
@@ -484,7 +393,7 @@ Acknowledgement:
             <div class="feature__content">
                 <div class="col col-1">
                     <div class="col__img">
-                        <img src="images/feature-1.jpg" alt="feature">
+                        <img src="images/homepage/feature-1.jpg" alt="feature">
                         <div class="col__desc">
                             <p>
                                 Step into our enchanting world, where cozy corners and captivating tales await your
@@ -495,7 +404,7 @@ Acknowledgement:
                 </div>
                 <div class="col col-2">
                     <div class="col__img">
-                        <img src="images/feature-2.jpg" alt="feature">
+                        <img src="images/homepage/feature-2.jpg" alt="feature">
                         <div class="col__desc">
                             <p>
                                 Unwind in the gentle embrace of literature's timeless allure.
@@ -503,7 +412,7 @@ Acknowledgement:
                         </div>
                     </div>
                     <div class="col__img">
-                        <img src="images/feature-3.jpg" alt="feature">
+                        <img src="images/homepage/feature-3.jpg" alt="feature">
                         <div class="col__desc">
                             <p>
                                 Explore a universe of imagination and wonder.
@@ -517,10 +426,10 @@ Acknowledgement:
         <!-- Rich Media Section -->
         <section class="youtube">
             <div class="youtube__vid">
-                <iframe width="380" height="250" src="https://www.youtube.com/embed/FLLmWw4MWVI" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                <iframe width="380" height="250" src="https://www.youtube.com/embed/FLLmWw4MWVI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
             <div class="youtube__desc">
                 <h1>
@@ -528,9 +437,9 @@ Acknowledgement:
                 </h1>
                 <p>
                     Immerse yourself in the soothing sounds of paper rustling, scissors snipping, and memories coming to
-                life. At CozyVerse Books, we believe in the magic of storytelling, whether it's through the pages of
-                a beloved book or the pages you craft yourself. Watch the video to experience the tranquility
-                of ASMR scrapbooking, a perfect complement to your cozy reading moments.
+                    life. At CozyVerse Books, we believe in the magic of storytelling, whether it's through the pages of
+                    a beloved book or the pages you craft yourself. Watch the video to experience the tranquility
+                    of ASMR scrapbooking, a perfect complement to your cozy reading moments.
                 </p>
             </div>
         </section>
@@ -538,7 +447,7 @@ Acknowledgement:
         <!--Newsletter Section-->
         <section class="newsletter">
             <div class="newsletter__illust">
-                <img src="images/book-stack.png" alt="Newsletter Image">
+                <img src="images/homepage/book-stack.png" alt="Newsletter Image">
             </div>
             <div class="newletter__msg">
                 <h1>Subscribe to our Newsletter</h1>
@@ -550,16 +459,16 @@ Acknowledgement:
             </div>
         </section>
     </main>
-
+ 
     <!-- Footer with horizontal nav bar -->
     <footer>
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms</a></li>
-                    <li><a href="#copyright">Copyright</a></li>
+                    <li><a href="contact.html">About Us</a></li>
+                    <li><a href="contact.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Terms</a></li>
+                    <li><a href="contact.html">Copyright</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
