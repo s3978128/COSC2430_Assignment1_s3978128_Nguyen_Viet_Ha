@@ -30,7 +30,7 @@
 }
 
 .book__title {
-    font-size: clamp(1em, 1.5vw, 1.3em);
+    font-size: clamp(0.9em, 1.4vw, 1.3em);
 }
 
 .book__price {
@@ -45,6 +45,36 @@
     transform: translateY(250px);
     background-color: rgba(239, 230, 230, 0.98);
 }
+
+/*Large screensize*/
+
+@media only screen and (min-width: 1350px){
+    
+        .book{
+            width: 300px;
+            height: 450px;
+        }
+    
+        .book__img{
+            top: 12px;
+            left: calc((300px - 200px) / 2);
+            width: 200px;
+        }
+    
+        .book__data{
+            transform: translateY(330px);
+        }
+    
+        .book:hover .book__data{
+            transform: translateY(280px);
+        }
+
+        .book__title {
+            font-size: clamp(0.9em, 1.2vw, 1.6em);
+        }
+}
+
+/*Media query for smaller screen size*/
 
 @media only screen and (max-width: 860px){
 

@@ -75,13 +75,30 @@ fieldset {
 
 .btn-reset:hover{
     transform: none;
-    background-color: var(--secondary-color);
+    background-color: var(--shadow-color);
+    color: var(--bg-color);
 }
 
 .btn-submit:hover{
     transform: none;
     background-color: var(--dark-color);
     color: white;
+}
+
+@media screen and (min-width: 1350px){
+    form,
+    select,
+    input,
+    .btn-reset,
+    .btn-submit{
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .btn-reset,
+    .btn-submit{
+        padding: 2% 5%;
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -1,3 +1,8 @@
+h1{
+    font-size: clamp(1.5em, 2.5vw, 4em);
+    font-weight: 600;
+}
+
 /*--
 Homepage landing
 --*/
@@ -160,8 +165,6 @@ Photos feature section
 .feature__msg h1 {
     text-align: center;
     margin: 5% 0 2% 0;
-    font-size: clamp(1.5em, 2vw, 2.5em);
-    font-weight: 600;
 }
 
 .feature__content {
@@ -331,24 +334,23 @@ Media queries
     .book__desc{
         font-size: clamp(0.8em, 0.9vw, 1.7em);
     }
-
+    
     .feature__content {
-        width: 80%;
-        height: 100%;
-        margin-inline: auto;
+        height: 450px;
     }
 
-    .col-1,
-    .col-2 {
-        width: 50%;
-    }
-
-    .col-1 .col__desc,
-    .col-2 .col__desc {
-        width: 30vw;
-        font-size: clamp(1.1em, 1.5vw, 2em);
+    .col-1 {
+        width: 600px;
     }
     
+    .col-2 {
+        width: 400px;
+    }
+    
+    .col__desc p{
+        font-size: 1.8em;
+        line-height: 1.5em;
+    }
 
     .newletter__msg h1{
         font-size: 3em;
@@ -380,7 +382,7 @@ Media queries
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
     .msg__content{
         width: 100%;
     }
@@ -404,7 +406,7 @@ Media queries
 
 /*Mobile view*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .stats__content{
         padding: 0 2%;
     }
@@ -472,14 +474,6 @@ Media queries
     .stats__illust{
         width: 40%;
     }
-
-    .youtube__desc h1{
-        font-size: 1.2em;
-    }
-
-    .youtube__desc p{
-        font-size: 0.6em;
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -487,7 +481,7 @@ Media queries
     .col-2 .col__desc {
         font-size: clamp(0.7em, 1.1vw, 2em);
     }
-    
+     
     .newsletter{
         flex-direction: column;
     }

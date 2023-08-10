@@ -73,6 +73,10 @@ img {
     width: 100%;
 }
 
+button{
+    border: none;
+}
+
 /*Button styles*/
 
 .btn {
@@ -490,8 +494,7 @@ footer nav a:hover {
 @media only screen and (min-width: 1350px) {
     nav a,
     .h-right i,
-    .logo h1,
-    .soc-med-icons {
+    .logo h1{
         font-size: clamp(1.5em, 1.4vw, 4em);
         padding: 8px;
     }
@@ -499,6 +502,16 @@ footer nav a:hover {
     .logo img{
         width: 4vw;
         height: 4vw;
+    }
+
+    #top-btn{
+        width: 4vw;
+        height: 4vw;
+        font-size: 2.5em;
+    }
+
+    .banner__content{
+        line-height: 1.7em;
     }
 }
 
