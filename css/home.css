@@ -245,6 +245,7 @@ Video section
 
 .youtube__desc p{
     font-size: clamp(0.9em, 1.2vw, 1.2em);
+    line-height: 1.6em;
 }
 
 
@@ -302,7 +303,75 @@ Newsletter section
 Media queries
 --*/
 
+/*Large screensize*/
 
+@media only screen and (min-width: 1350px) {
+    .stats__intro-msg{
+        font-size: clamp(1.2em, 1.5vw, 2.5em);
+    }
+
+    .stats__item{
+        font-size: clamp(1.1em, 1.3vw, 1.8em);
+    }
+
+    .stats__item img{
+        width: 60%;
+        margin: 20%;
+    }
+
+    .book{
+        width: 500px;
+        height: 300px;
+    }
+
+    .book__title{
+        font-size: clamp(1.5em, 1.4vw, 1.9em);
+    }
+
+    .book__desc{
+        font-size: clamp(0.8em, 0.9vw, 1.7em);
+    }
+
+    .feature__content {
+        width: 80%;
+        height: 100%;
+        margin-inline: auto;
+    }
+
+    .col-1,
+    .col-2 {
+        width: 50%;
+    }
+
+    .col-1 .col__desc,
+    .col-2 .col__desc {
+        width: 30vw;
+        font-size: clamp(1.1em, 1.5vw, 2em);
+    }
+    
+
+    .newletter__msg h1{
+        font-size: 3em;
+    }
+
+    .newletter__msg p,
+    form,
+    .youtube__desc p{
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+
+    .youtube{
+        padding: 5% 10%;
+    }
+
+    .youtube__vid iframe{
+        width: 450px;
+        height: 300px;
+    }
+}
+
+/*Smaller screensize*/
 
 @media only screen and (max-width: 1200px) {
     .hero {

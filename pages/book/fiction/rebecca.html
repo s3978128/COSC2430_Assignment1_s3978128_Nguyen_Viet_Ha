@@ -1,0 +1,190 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rebecca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon Link-->
+    <link rel="icon" href="../../../images/bookstore-favicon.png" type="/png">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/book.css">
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <!--Remixicons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <!-- Main header -->
+
+    <header>
+        <!-- Header with logo image -->
+
+        <a href="../../../index.html">
+            <div class="logo">
+                <img src="../../../images/bookstore-favicon.png" alt="Bookstore Logo">
+                <h1>
+                    CozyVerse <span>Books</span>
+                </h1>
+            </div>
+        </a>
+
+
+        <!-- vertical menu (horizontal on desktop devices) -->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../../category/fiction.html">Fiction</a>
+                    </li>
+                    <li>
+                        <a href="../../category/nonfiction.html">Nonfiction</a>
+                    </li>
+                    <li>
+                        <a href="../../contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="h-right">
+            <!--Decorative icons-->
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-3-line"></i>
+
+            <!--Used for mobile menu-->
+            <i id="menu-icon" class="ri-menu-line"></i>
+            <i id="close-icon" class="ri-close-line"></i>
+        </div>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- To top button -->
+        <button onclick="topFunction()" id="top-btn" title="Go to top">
+            <i class="ri-arrow-up-s-line"></i>
+        </button>
+        
+        <ul class="breadcrumb">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../category/fiction.html">Fiction</a></li>
+            <li>Rebecca</li>
+        </ul>
+        
+        <div class="product">
+            <div class="col">
+                <div class="slider">
+                    <div class="preview-image">
+                        <img src="../../../images/books/rebecca/rebecca.jpg" id="showcase" alt="Image 1">
+                    </div>
+
+                    <div class="small-images">
+                        <img src="../../../images/books/rebecca/rebecca.jpg" alt="Image 1" onclick="clickme(this)">
+                        <img src="../../../images/books/rebecca/p1.jpg" alt="Image 2" onclick="clickme(this)">
+                        <img src="../../../images/books/rebecca/p2.jpg" alt="Image 3" onclick="clickme(this)">
+                    </div> 
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product__desc">
+                    <h1>Rebecca</h1>
+
+                    <div class="product__rating">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+
+                    <div class="product__price">
+                        <p class="old-price">Old Price: $14.99</p>
+                        <p class="new-price">New Price: <span>$9.99 (30%)</span></p>
+                    </div>
+
+                    <ul class="product__details">
+                        <li>Available: <span>In stock!</span></li>
+                        <li>Shipping Area: <span>Globally</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+
+                    <div class="product__purchase">
+                        <div class="quantity">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="1">
+                        </div>
+                       
+                        <button class="btn cart-btn">
+                            Add to cart
+                            <i class="ri-shopping-cart-line"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="long-desc">
+            <h1>Rebecca</h1>
+            <p>
+                Working as a paid companion to a bitter elderly lady, the timid heroine of Rebecca learns her place. Life is bleak until, on a trip to the South of France, she falls in love with Maxim de Winter, a handsome widower whose proposal takes her by surprise. Whisked from Monte Carlo to Manderley, Maxim's isolated Cornish estate, the friendless young bride begins to realise she barely knows her husband at all. And in every corner of every room is the phantom of his beautiful first wife, Rebecca.
+            </p>
+        </div>
+
+    </main>
+    <!-- Main content -->
+
+    <!-- Footer with horizontal nav bar -->
+    <footer>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../../contact.html">About Us</a></li>
+                    <li><a href="../../contact.html">Privacy Policy</a></li>
+                    <li><a href="../../contact.html">Terms</a></li>
+                    <li><a href="../../contact.html">Copyright</a></li>
+                    <li><a href="../../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="soc-med-icons">
+                <i class="ri-facebook-circle-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS Link-->
+    <script src="../../../js/script.js"></script>
+
+</body>
+
+</html>
