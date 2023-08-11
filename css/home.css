@@ -1,3 +1,14 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
+*/
+
 h1{
     font-size: clamp(1.5em, 2.5vw, 4em);
     font-weight: 600;
@@ -129,7 +140,6 @@ Stats section
     margin: 0 10px;
     border-radius: 10px;
     background-color: var(--cream-color);
-    position: relative;
     max-width: 150px;
     transition: 0.3s ease;
     font-size: 1.2em;
@@ -277,11 +287,6 @@ Newsletter section
 .newsletter__illust {
     margin: 0 30px;
     width: 25%;
-}
-
-.newsletter form {
-    display: flex;
-    align-items: center;
 }
 
 .newsletter input[type="email"] {

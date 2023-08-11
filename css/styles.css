@@ -1,3 +1,14 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
+*/
+
 /*Define variables for color palette: */
 
 :root {
@@ -537,6 +548,11 @@ footer nav a:hover {
     .price-btn {
         padding: 5%;
     }
+
+    /*Banner for category and contact pages*/
+    .banner {
+        height: 30vh;
+    }
 }
 
 
@@ -663,10 +679,6 @@ footer nav a:hover {
         background-color: var(--cream-color);
     }
 
-    /*Banner for category and contact pages*/
-    .banner {
-        height: 40vh;
-    }
 
 }
 
@@ -715,9 +727,6 @@ footer nav a:hover {
     }
 
     /*Banner for category and contact pages*/
-    .banner {
-        height: 30vh;
-    }
 
     .banner__content {
         width: 100%;

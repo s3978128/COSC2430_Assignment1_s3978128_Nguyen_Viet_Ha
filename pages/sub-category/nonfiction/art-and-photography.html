@@ -8,8 +8,11 @@ ID: s3978128
 Acknowledgement:
 - Other icons from Remixicons: https://remixicon.com/
 - Fonts from Google Fonts: https://fonts.google.com/ 
-- Book cover and description from Goodreads:
-https://www.goodreads.com/book/show/18859481-plenty
+- Feature photos from Unsplash: https://unsplash.com/photos/c1YrcFYW66s 
+- Book cover photos from Goodreads:
+https://www.goodreads.com/book/show/187633.Art_and_Fear 
+https://www.goodreads.com/book/show/903114.Susan_Sontag_on_Photography 
+https://www.goodreads.com/book/show/395233.The_Letters_of_Vincent_van_Gogh 
 -->
 
 <!DOCTYPE html>
@@ -18,7 +21,7 @@ https://www.goodreads.com/book/show/18859481-plenty
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Plenty</title>
+    <title>Art and Photography</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Favicon Link-->
@@ -26,7 +29,7 @@ https://www.goodreads.com/book/show/18859481-plenty
 
     <!--CSS Links-->
     <link rel="stylesheet" href="../../../css/styles.css">
-    <link rel="stylesheet" href="../../../css/book.css">
+    <link rel="stylesheet" href="../../../css/category.css">
 
     <!--Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,7 +77,7 @@ https://www.goodreads.com/book/show/18859481-plenty
                 </ul>
             </nav>
         </div>
-        
+
         <div class="h-right">
             <!--Decorative icons-->
             <i class="ri-search-line"></i>
@@ -94,77 +97,59 @@ https://www.goodreads.com/book/show/18859481-plenty
         <button onclick="topFunction()" id="top-btn" title="Go to top">
             <i class="ri-arrow-up-s-line"></i>
         </button>
-        
-        <ul class="breadcrumb">
-            <li><a href="../../../index.html">Home</a></li>
-            <li><a href="../../category/nonfiction.html">Nonfiction</a></li>
-            <li>Plenty</li>
-        </ul>
-        
-        <div class="product">
-            <div class="col">
-                <div class="slider">
-                    <div class="preview-image">
-                        <img src="../../../images//books/plenty/plenty.jpg" id="showcase" alt="Image 1">
-                    </div>
 
-                    <div class="small-images">
-                        <img src="../../../images/books/plenty/plenty.jpg" alt="Image 1" onclick="clickme(this)">
-                        <img src="../../../images/books/plenty/p1.jpg" alt="Image 2" onclick="clickme(this)">
-                        <img src="../../../images/books/plenty/p2.jpg" alt="Image 3" onclick="clickme(this)">
-                    </div> 
-                </div>
+        <!-- Banner -->
+        <div class="banner">
+            <div class="banner__content">
+                <h1 class="banner__title">Art and Photography</h1>
             </div>
+        </div>
 
-            <div class="col">
-                <div class="product__desc">
-                    <h1>Plenty</h1>
-
-                    <div class="product__rating">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                    </div>
-
-                    <div class="product__price">
-                        <p class="old-price">Old Price: $14.99</p>
-                        <p class="new-price">New Price: <span>$9.99 (30%)</span></p>
-                    </div>
-
-                    <ul class="product__details">
-                        <li>Available: <span>In stock!</span></li>
-                        <li>Shipping Area: <span>Globally</span></li>
-                        <li>Shipping Fee: <span>Free</span></li>
-                    </ul>
-
-                    <div class="product__purchase">
-                        <div class="quantity">
-                            <label for="quantity">Quantity</label>
-                            <input type="number" id="quantity" name="quantity" min="0" value="1">
-                        </div>
-                       
-                        <button class="btn cart-btn">
-                            Add to cart
-                            <i class="ri-shopping-cart-line"></i>
-                        </button>
+        <div class="category">
+            <div class="category__items">
+                <div class="book">
+                    <img src="../../../images/books/art and fear/art-and-fear.jpg" alt="Art and Fear" class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            Art and Fear
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../../book/nonfiction/art-and-fear.html" class="btn price-btn">See Details</a>
                     </div>
                 </div>
 
+                <div class="book">
+                    <img src="../../../images/books/on photography/on-photography.jpg" alt="On Photography"
+                        class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            On Photography
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../../book/nonfiction/on-photography.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img src="../../../images/books/letters van gogh/letters-van-gogh.jpg" alt="Letters of Van Gogh"
+                        class="book__img">
+                    <div class="book__data">
+                        <h1 class="book__title">
+                            Letters of Van Gogh
+                        </h1>
+                        <span class="book__price">
+                            $10.99
+                        </span>
+                        <a href="../../book/nonfiction/letters-van-gogh.html" class="btn price-btn">See Details</a>
+                    </div>
+                </div>
             </div>
-
         </div>
-
-        <div class="long-desc">
-            <h1>Plenty</h1>
-            <p>
-                Yotam Ottolenghi is one of the most exciting new talents in the cooking world, with four fabulous, eponymous London restaurants and a weekly newspaper column that's read by foodies all over the world. Plenty is a must-have collection of 120 vegetarian recipes featuring exciting flavors and fresh combinations that will delight readers and eaters looking for a sparkling new take on vegetables. Yotam's food inspiration comes from his Mediterranean background and his unapologetic love of ingredients. 
-            </p>
-        </div>
-
     </main>
-    <!-- Main content -->
 
     <!-- Footer with horizontal nav bar -->
     <footer>

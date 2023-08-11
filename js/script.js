@@ -1,3 +1,14 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
+*/
+
 /*Header scroll effect*/
 
 const header = document.querySelector("header");
@@ -27,7 +38,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-/*Hamburger menu :)*/
+/*Hamburger menu*/
 
 let menu = document.querySelector("#menu-icon");
 let closeMenu = document.querySelector("#close-icon");

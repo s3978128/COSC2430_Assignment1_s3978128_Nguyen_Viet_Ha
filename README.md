@@ -6,4 +6,3 @@
 - Assessment: Assignment 1
 - Author: Nguyen Viet Ha
 - ID: s3978128
-- Acknowledgement: Acknowledge the resources that you use here.

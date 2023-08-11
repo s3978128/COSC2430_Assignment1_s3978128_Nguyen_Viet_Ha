@@ -1,3 +1,14 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Viet Ha
+ID: s3978128
+Acknowledgement:
+Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
+*/
+
 form {
     max-width: 50%;
     margin: 5% auto;
@@ -46,7 +57,6 @@ fieldset {
     margin-top: 6px;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
