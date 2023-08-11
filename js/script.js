@@ -9,7 +9,7 @@ Acknowledgement:
 Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
 */
 
-/*Header scroll effect*/
+/* Header scroll effect */
 
 const header = document.querySelector("header");
 
@@ -17,7 +17,7 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 80);
 });
 
-/*Scroll to top button*/
+/* Scroll to top button */
 let topButton = document.querySelector("#top-btn");
 window.onscroll = function() {scrollFunction()};
 
@@ -38,7 +38,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-/*Hamburger menu*/
+/* Hamburger menu */
 
 let menu = document.querySelector("#menu-icon");
 let closeMenu = document.querySelector("#close-icon");
@@ -56,14 +56,14 @@ closeMenu.onclick = () => {
     navbar.classList.toggle("open");
 }
 
-/*Slider for book page*/
+/* Slider for book page */
 
 function clickme(image) {
     var show = document.getElementById("showcase");
     show.src = image.src;
 } 
 
-/*Required checkbox for contact form*/
+/* Required checkbox for contact form */
 
 function validateForm() {
     var checkbox1 = document.getElementById('check-1');

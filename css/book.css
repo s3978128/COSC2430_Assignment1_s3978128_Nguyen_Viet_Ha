@@ -9,10 +9,14 @@ Acknowledgement:
 Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
 */
 
+/* Image size: 250x400px */
+
 img{
   width: 250px;
   height: 400px;
 }
+
+/* Breadcrumb */
 
 .breadcrumb{
   display: flex;
@@ -46,6 +50,14 @@ img{
   content: '';
 }
 
+/* Content padding */
+
+.product, .long-desc{
+  padding: 3% 15vw;
+}
+
+/* Product row */
+
 .product{
   display: flex;
   align-items: flex-start;
@@ -54,9 +66,7 @@ img{
   gap: 1em;
 }
 
-.product, .long-desc{
-  padding: 3% 15vw;
-}
+/* Image column slider */
 
 .slider{
   display: flex;
@@ -85,6 +95,8 @@ img{
   opacity: 1;
   filter: brightness(1);
 }
+
+/* Description column */
 
 .product__desc{
   padding: 5% 8%;
@@ -156,6 +168,8 @@ img{
   margin: 0 10% 0 2%;
 }
 
+/* Quantity and add to cart button */
+
 .quantity{
   display: flex;
   align-items: center;
@@ -180,6 +194,8 @@ img{
   color: var(--bg-color);
 }
 
+/* Long description below */
+
 .long-desc{
   text-align: center;
   background-color: var(--cream-color);
@@ -196,7 +212,9 @@ img{
   line-height: 1.5em;
 }
 
-/*--Media queries--*/
+/*--
+Media queries
+--*/
 
 /*Large screensize*/
 
@@ -233,6 +251,7 @@ img{
 
 
 @media only screen and (max-width: 768px) {
+
   .product{
     flex-direction: column;
   }

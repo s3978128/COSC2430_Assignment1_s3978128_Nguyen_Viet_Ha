@@ -9,6 +9,8 @@ Acknowledgement:
 Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
 */
 
+/* Contact form */
+
 form {
     max-width: 50%;
     margin: 5% auto;
@@ -17,10 +19,12 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/*Labels and inputs*/
+
 label, legend{
     padding: 5px 10px 5px 0;
     display: inline-block;
-    font-size: clamp(0.8em, 1.2vw, 1.3em);
+    font-size: clamp(0.8em, 1vw, 1.3em);
 }
 
 input[type="text"],
@@ -41,9 +45,7 @@ fieldset {
     border: none;
 }
 
-.btn {
-    float: right;
-}
+/*Set float left on labels and inputs to display on same line*/
 
 .col-30 {
     float: left;
@@ -57,10 +59,18 @@ fieldset {
     margin-top: 6px;
 }
 
+/*Clear floats after */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+/*Button styles*/
+
+.btn {
+    float: right;
 }
 
 .btn-reset, .btn-submit{
@@ -94,6 +104,10 @@ fieldset {
     background-color: var(--dark-color);
     color: white;
 }
+
+/*-- 
+Media queries
+--*/
 
 @media screen and (min-width: 1350px){
     form,

@@ -15,7 +15,7 @@ h1{
 }
 
 /*--
-Homepage landing
+Homepage landing 
 --*/
 
 .hero {
@@ -33,13 +33,13 @@ Homepage landing
     background: url(../images/homepage/bg.png) no-repeat center center/cover;
 }
 
-/*Text on left side*/
+/* Text on left side */
 
 .hero__msg {
     animation: slideInLeft 0.55s ease-in-out;
 }
 
-/*Small welcome text*/
+/* Small welcome text */
 
 .hero__msg>p {
     font-style: italic;
@@ -51,7 +51,7 @@ Homepage landing
     content: '⁠—';
 }
 
-/*Large text block*/
+/* Large text block */
 .msg__content {
     margin-left: 2vw;
     width: 85%;
@@ -68,7 +68,7 @@ Homepage landing
     padding: 2%;
 }
 
-/*Start browsing button*/
+/* Start browsing button */
 
 .btn-hero {
     z-index: 1;
@@ -89,7 +89,7 @@ Homepage landing
     color: var(--text-color);
 }
 
-/*Big illustration on right side*/
+/* Big illustration on right side */
 
 .hero__illustration img {
     animation: slideInRight 1s ease-in-out;
@@ -150,8 +150,9 @@ Stats section
     transform: translateY(-10px);
 }
 
-.stats__item h3 {
+.stats__item p {
     margin: 5px;
+    font-weight: 600;
 }
 
 .stats__item img {
@@ -172,7 +173,7 @@ Photos feature section
     margin: 2% 0;
 }
 
-.feature__msg h1 {
+.feature__msg h2 {
     text-align: center;
     margin: 5% 0 2% 0;
 }
@@ -274,7 +275,7 @@ Newsletter section
     padding: 0 5%;
 }
 
-.newsletter h1{
+.newsletter h2{
     font-size: clamp(1.5em, 2vw, 2.5em);
     font-weight: 600;
     margin-bottom: 2%;

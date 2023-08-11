@@ -9,6 +9,8 @@ Acknowledgement:
 Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
 */
 
+/* Book cards for this page */
+
 .book{
     width: 240px;
     height: 400px;
@@ -88,6 +90,10 @@ Code snippets from W3Schools, Stack Overflow, and other sources are studied, twe
 /*Media query for smaller screen size*/
 
 @media only screen and (max-width: 860px){
+    .category__title{
+        font-size: clamp(0.5em, 0.8vw, 1.2em);
+        line-height: 1.5em;
+    }
 
     .book{
         width: 210px;

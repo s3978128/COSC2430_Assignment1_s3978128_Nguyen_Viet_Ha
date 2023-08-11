@@ -9,7 +9,7 @@ Acknowledgement:
 Code snippets from W3Schools, Stack Overflow, and other sources are studied, tweaked and incorporated in this project.
 */
 
-/*Define variables for color palette: */
+/* Define variables for color palette: */
 
 :root {
     --primary-color: rgb(190, 189, 219);
@@ -26,13 +26,13 @@ Code snippets from W3Schools, Stack Overflow, and other sources are studied, twe
     --p-font: 0.9em;
 }
 
-/* make scrollbar transparent */
+/* Make scrollbar transparent */
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
 }
 
-/*Reset default CSS, define normal behavior*/
+/* Reset default CSS, define normal behavior */
 
 * {
     box-sizing: border-box;
@@ -88,7 +88,7 @@ button{
     border: none;
 }
 
-/*Button styles*/
+/* Button styles */
 
 .btn {
     display: inline-block;
@@ -102,7 +102,7 @@ button{
     transition: 0.3s ease;
 }
 
-/*Scroll to top button*/
+/* Scroll to top button */
 
 #top-btn {
     opacity: 0;
@@ -123,8 +123,8 @@ button{
     transition: 0.2s ease;
 }
 
-/*Same CSS for header and footer navbar*/
-
+/* Same CSS for header and footer navbar */
+ 
 header,
 footer {
     width: 100%;
@@ -142,7 +142,7 @@ footer {
     margin: 0 5px;
 }
 
-/*Header logo and navbar*/
+/* Header logo and navbar */
 
 header {
     width: 100%;
@@ -220,7 +220,29 @@ header nav a:hover {
     color: var(--light-color);
 }
 
-/*--Sticky header--*/
+/*Menu icons*/
+
+.h-right #menu-icon {
+    display: none;
+}
+
+.h-right #close-icon {
+    display: none;
+    color: var(--bg-color);
+}
+
+.h-right #menu-icon,
+.h-right #close-icon {
+    font-size: 2.8em;
+    position: absolute;
+    right: 3%;
+    top: 2vh;
+}
+
+/*--
+Sticky header
+--*/
+
 header.sticky {
     background-color: var(--shadow-color);
     backdrop-filter: blur(35px);
@@ -372,7 +394,10 @@ Book showcase cards (used in homepage and category page)
     transition: all 0.5s ease;
 }
 
-/*Footer navbar*/
+/*--
+Footer navbar
+--*/
+
 footer {
     justify-content: center;
     align-items: center;
@@ -420,7 +445,9 @@ footer nav a:hover {
     color: var(--light-color);
 }
 
-/*Banner for category, book, contact pages*/
+/*--
+Banner for category, book, contact pages
+--*/
 
 .banner {
     position: relative;
@@ -447,27 +474,8 @@ footer nav a:hover {
     margin-bottom: 10px;
 }
 
-/*Menu icons*/
 
-.h-right #menu-icon {
-    display: none;
-}
-
-.h-right #close-icon {
-    display: none;
-    color: var(--bg-color);
-}
-
-.h-right #menu-icon,
-.h-right #close-icon {
-    font-size: 2.8em;
-    position: absolute;
-    right: 3%;
-    top: 2vh;
-}
-
-
-/*Keyframes for animations*/
+/* Keyframes for animations */
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);
@@ -488,21 +496,14 @@ footer nav a:hover {
     }
 }
 
-@keyframes slideInBottom {
-    0% {
-        transform: translateY(100%);
-    }
+/*--
+Media queries
+--*/
 
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-/*Media queries*/
-
-/*Large screensize*/
+/*Large screen size*/
 
 @media only screen and (min-width: 1350px) {
+    /* Larger elements */
     nav a,
     .h-right i,
     .logo h1{
@@ -526,7 +527,7 @@ footer nav a:hover {
     }
 }
 
-/*Smaller sizes*/
+/*Smaller screen sizes*/
 
 @media only screen and (max-width: 1250px) {
     .book {
@@ -549,7 +550,7 @@ footer nav a:hover {
         padding: 5%;
     }
 
-    /*Banner for category and contact pages*/
+    /* Banner for category and contact pages */
     .banner {
         height: 30vh;
     }
@@ -558,7 +559,7 @@ footer nav a:hover {
 
 @media only screen and (max-width: 800px) {
 
-    /*Show hamburger menu*/
+    /* Show hamburger menu on mobile */
 
     .h-right #menu-icon {
         display: block;
@@ -599,7 +600,7 @@ footer nav a:hover {
         transform: none;
     }
 
-    /*Show close icon when menu clicked*/
+    /* Show close icon when menu clicked */
 
     header .navbar .open {
         left: 0;
@@ -613,7 +614,7 @@ footer nav a:hover {
         display: block;
     }
 
-    /*Adjust header nav*/
+    /* Adjust header nav */
 
     header {
         padding: 1% 2% 1% 7%;
@@ -630,7 +631,7 @@ footer nav a:hover {
     }
 
 
-    /*--Adjust book showcase cards*/
+    /* Adjust book showcase cards */
 
     .book {
         width: 500px;
@@ -666,7 +667,7 @@ footer nav a:hover {
         top: 10px;
     }
 
-    /*Disable hover effects for touch screen*/
+    /* Disable hover effects for touch screen*/
     .book:hover .book__img {
         transform: none;
     }
